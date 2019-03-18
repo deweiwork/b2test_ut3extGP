@@ -1,0 +1,21 @@
+
+
+NET "CLK_SEL" LOC = E35;
+NET "CLK_SEL_127M" LOC = B37;
+NET "CLK_SEL_254M" LOC = A37;
+
+NET "TX_ser_bnak<0>[0]" LOC = AN42;
+NET "TX_ser_bnak<0>[1]" LOC = AM44;
+NET "TX_ser_bnak<0>[2]" LOC = AL42;
+NET "TX_ser_bnak<0>[3]" LOC = AK44;
+
+
+
+
+#NET "clock_test_out" LOC = N31;
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "XCVR_Ref_Clock_in" LOC = AU37;
