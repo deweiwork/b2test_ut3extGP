@@ -1,16 +1,16 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Mar 19 11:54:22 2019
+// Written by: Map P.20131013 on Tue Mar 19 13:47:05 2019
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "XCVR_Ref_Clock_in" LOCATE = SITE "AU37" LEVEL 1;
-COMP "CLK_SEL_127M" LOCATE = SITE "B37" LEVEL 1;
-COMP "CLK_SEL_254M" LOCATE = SITE "A37" LEVEL 1;
-COMP "CLK_SEL" LOCATE = SITE "E35" LEVEL 1;
 COMP "TX_ser_bnak<0><0>" LOCATE = SITE "AN42" LEVEL 1;
 COMP "TX_ser_bnak<0><1>" LOCATE = SITE "AM44" LEVEL 1;
 COMP "TX_ser_bnak<0><2>" LOCATE = SITE "AL42" LEVEL 1;
 COMP "TX_ser_bnak<0><3>" LOCATE = SITE "AK44" LEVEL 1;
+COMP "XCVR_Ref_Clock_in" LOCATE = SITE "AU37" LEVEL 1;
+COMP "CLK_SEL_127M" LOCATE = SITE "B37" LEVEL 1;
+COMP "CLK_SEL_254M" LOCATE = SITE "A37" LEVEL 1;
+COMP "CLK_SEL" LOCATE = SITE "E35" LEVEL 1;
 PIN
         Connect_XVCR_Module_loop[0].XCVR_Module_gen/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i_pins<293>
         = BEL
@@ -117,6 +117,38 @@ TIMEGRP D_CLK = PIN
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_gen_loop[0].judg_if_data_is_internal.Data_gen/tx_d_r_1"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_gen_loop[0].judg_if_data_is_internal.Data_gen/tx_d_r_0"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_15"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_14"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_13"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_12"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_11"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_10"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_9"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_8"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_7"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_6"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_5"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_4"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_3"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_2"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_0"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/rx_status_FSM_FFd2"
         BEL
@@ -226,6 +258,8 @@ TIMEGRP D_CLK = PIN
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_0"
         BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/rx_traffic_ready"
+        BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/TX_K_0"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/tx_traffic_ready"
@@ -267,8 +301,6 @@ TIMEGRP D_CLK = PIN
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Tx_DATA_Xcvr_1"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Tx_DATA_Xcvr_0"
-        BEL
-        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/flag_swap_r"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Tx_DATA_Xcvr_r_15"
         BEL
@@ -373,6 +405,8 @@ TIMEGRP D_CLK = PIN
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_K_i_1"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_K_i_0"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/ch_sync_buffer_sync_done"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_3"
         BEL
@@ -2319,6 +2353,44 @@ TIMEGRP D_CLK = PIN
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_0_0"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/sync_status"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/rx_traffic_ready_r"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/flag_swap_r"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/ch_sync_buffer_sync_done_r"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_15_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_14_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_13_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_12_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_11_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_10_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_9_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_8_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_7_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_6_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_5_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_4_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_3_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_2_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_1_1"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/Data_check_loop[0].judg_if_data_is_internal.Data_check/err_count_r_0_1"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_5_TO_8.U_TPL/I_OUTREG.U_DOUT"
         BEL

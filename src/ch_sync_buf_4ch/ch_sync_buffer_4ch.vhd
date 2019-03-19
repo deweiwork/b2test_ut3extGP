@@ -37,7 +37,7 @@ architecture top of ch_sync_buffer_4ch is
         sync_buf_data_type;
     signal sync_buf_ch : sync_buf_ch_type := (others => (others => (others => '0')));
 
-    type int_4ch_t is array (grouped_ch -1 downto 0) of integer range 0 to  (2**ch_sync_buffer_Length_power -1);
+    type int_4ch_t is array (grouped_ch -1 downto 0) of integer range 0 to (2**ch_sync_buffer_Length_power -1);
     signal cnt_ch           : int_4ch_t := (others => 0);    
     signal out_mux_sel_ch   : int_4ch_t := (others => ch_sync_buffer_Length_power - 1);  
     
@@ -45,6 +45,9 @@ architecture top of ch_sync_buffer_4ch is
     signal sync_status      : syncing_status_type := sync_start;
 
     signal output_buf       : para_data_men;
+
+    signal ch_sync_buffer_sync_done_r   : std_logic := '0';
+    signal ch_sync_buffer_overflow_r    : std_logic := '0';
 
 begin
 
@@ -70,16 +73,26 @@ begin
             cnt_ch          <= (others => 0);
             sync_status     <= sync_start;
             out_mux_sel_ch  <= (others => ch_sync_buffer_Length_power - 1);    
+            ch_sync_buffer_sync_done    <= '0';
+            ch_sync_buffer_overflow     <= '0';
 
         elsif (rising_edge(CLK)) then
+            ch_sync_buffer_sync_done <= ch_sync_buffer_sync_done_r;
+            ch_sync_buffer_overflow  <= ch_sync_buffer_overflow_r;
             case sync_status is
                 when sync_start =>
+                    ch_sync_buffer_sync_done_r <= '0';
                     for i in 0 to (grouped_ch-1) loop
                         if (cnt_ch(i) /= 0) then
                             sync_status <= sync_done;
                         elsif (ch_sync_buffer_data_In(i) = sync_pattern) then
-                            cnt_ch(i)   <= cnt_ch(i)+1;
-                            sync_status <= sync_start;
+                            if (sync_pattern = (2**ch_sync_buffer_Length_power -1)) then
+                                ch_sync_buffer_overflow_r   <= '1';
+                            else
+                                cnt_ch(i)   <= cnt_ch(i)+1;
+                                sync_status <= sync_start;
+                                ch_sync_buffer_overflow_r   <= '0';
+                            end if ;
                         end if;
                     end loop;
 
@@ -87,6 +100,7 @@ begin
                     for i in 0 to (grouped_ch-1) loop
                         out_mux_sel_ch(i) <= cnt_ch(i) -1;
                     end loop;
+                    ch_sync_buffer_sync_done_r <= '1';
 
                 when others =>        
             
@@ -97,9 +111,9 @@ begin
     Out_mux_ch_gen_loop : for j in 0 to (grouped_ch -1) generate
         Out_Mux : entity work.ch_sync_buf_out_mux
             port map(
-                MUX_Data_Out    => output_buf(j),  
-                sel             => conv_std_logic_vector(out_mux_sel_ch(j),ch_sync_buffer_Length_power),
-                MUX_Data_In     => sync_buf_ch(j)
+                Data_Out    => output_buf(j),  
+                sel         => conv_std_logic_vector(out_mux_sel_ch(j),ch_sync_buffer_Length_power),
+                Data_In     => sync_buf_ch(j)
             );
     end generate Out_mux_ch_gen_loop; 
 
