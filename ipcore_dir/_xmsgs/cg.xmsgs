@@ -29,10 +29,22 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">The chosen IP does not support an SYM schematic symbol.</arg>
 </msg>
 
-<msg type="warning" file="coreutil" num="0" delta="new" >WARNING: This core does not have a top level called &quot;/v6_gtxwizard_v1_12&quot;
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING:ProjectMgmt - Failed to confirm that part information for the file
+   &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/tmp/_cg/v6_gtxwizard_v1_12/i
+   mplement/ila.ngc&quot; matches the current project settings.
+Adding C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/tmp/_cg/v6_gtxwizard_v1_12/implement/rx_phase_align_fifo.ngc -view all -origin_type created
+Checking file
+&quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/tmp/_cg/v6_gtxwizard_v1_12/impl
+ement/rx_phase_align_fifo.ngc&quot; for project device match ...
+WARNING:ProjectMgmt - The file
+   &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/tmp/_cg/v6_gtxwizard_v1_12/i
+   mplement/rx_phase_align_fifo.ngc&quot; device information, 6vlx130tff1156-2, does
+   not match the current project device, xc6vhx380tff1923-2.
+Adding C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/tmp/_cg/v6_gtxwizard_v1_12.vho -view all -origin_type imported
 </msg>
 
-<msg type="warning" file="coreutil" num="0" delta="new" >WARNING: Top level has been set to &quot;/v6_gtxwizard_v1_12_top&quot;
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING: This core does not have a top level called &quot;/v6_gtxwizard_v1_12&quot;
+WARNING: Top level has been set to &quot;/v6_gtxwizard_v1_12_top&quot;
 </msg>
 
 <msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.

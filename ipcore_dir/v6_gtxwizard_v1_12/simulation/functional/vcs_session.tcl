@@ -116,9 +116,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXEQMIX_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXN_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXP_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Elastic Buffer and Phase Alignment Ports}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXBUFRESET_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Loss-of-sync State Machine}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX PLL Ports}} -divider
@@ -143,8 +140,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Driver and OOB signalling}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Elastic Buffer and Phase Alignment}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX PLL Ports}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:GTXTXRESET_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT}
@@ -172,9 +167,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXEQMIX_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXN_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXP_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Elastic Buffer and Phase Alignment Ports}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXBUFRESET_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Loss-of-sync State Machine}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX PLL Ports}} -divider
@@ -199,8 +191,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Driver and OOB signalling}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Elastic Buffer and Phase Alignment}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX PLL Ports}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:GTXTXRESET_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT}
@@ -228,9 +218,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXEQMIX_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXN_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXP_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Elastic Buffer and Phase Alignment Ports}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXBUFRESET_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Loss-of-sync State Machine}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX PLL Ports}} -divider
@@ -255,8 +242,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Driver and OOB signalling}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Elastic Buffer and Phase Alignment}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX PLL Ports}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:GTXTXRESET_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT}
@@ -284,9 +269,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXEQMIX_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXN_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXP_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Elastic Buffer and Phase Alignment Ports}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXBUFRESET_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX Loss-of-sync State Machine}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Receive Ports - RX PLL Ports}} -divider
@@ -311,8 +293,6 @@
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Driver and OOB signalling}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN}
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX Elastic Buffer and Phase Alignment}} -divider
-  gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {{Transmit Ports - TX PLL Ports}} -divider
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:GTXTXRESET_IN}
   gui_sg_addsignal -group v6_gtxwizard_v1_12_Group {:v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT}

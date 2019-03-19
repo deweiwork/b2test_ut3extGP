@@ -135,9 +135,6 @@ port
     GTX0_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX0_RXN_IN                             : in   std_logic;
     GTX0_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX0_RXBUFRESET_IN                      : in   std_logic;
-    GTX0_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX0_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -162,8 +159,6 @@ port
     GTX0_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX0_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX0_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX0_GTXTXRESET_IN                      : in   std_logic;
     GTX0_TXRESETDONE_OUT                    : out  std_logic;
@@ -196,9 +191,6 @@ port
     GTX1_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX1_RXN_IN                             : in   std_logic;
     GTX1_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX1_RXBUFRESET_IN                      : in   std_logic;
-    GTX1_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX1_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -223,8 +215,6 @@ port
     GTX1_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX1_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX1_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX1_GTXTXRESET_IN                      : in   std_logic;
     GTX1_TXRESETDONE_OUT                    : out  std_logic;
@@ -257,9 +247,6 @@ port
     GTX2_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX2_RXN_IN                             : in   std_logic;
     GTX2_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX2_RXBUFRESET_IN                      : in   std_logic;
-    GTX2_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX2_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -284,8 +271,6 @@ port
     GTX2_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX2_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX2_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX2_GTXTXRESET_IN                      : in   std_logic;
     GTX2_TXRESETDONE_OUT                    : out  std_logic;
@@ -318,9 +303,6 @@ port
     GTX3_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX3_RXN_IN                             : in   std_logic;
     GTX3_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX3_RXBUFRESET_IN                      : in   std_logic;
-    GTX3_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX3_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -345,8 +327,6 @@ port
     GTX3_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX3_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX3_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX3_GTXTXRESET_IN                      : in   std_logic;
     GTX3_TXRESETDONE_OUT                    : out  std_logic
@@ -708,9 +688,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx0_rxreset_i                  : std_logic;
     ------- Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR ------
     signal  gtx0_rxeqmix_i                  : std_logic_vector(2 downto 0);
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    signal  gtx0_rxbufreset_i               : std_logic;
-    signal  gtx0_rxbufstatus_i              : std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     signal  gtx0_rxlossofsync_i             : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -731,8 +708,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx0_txpostemphasis_i           : std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     signal  gtx0_txpreemphasis_i            : std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    signal  gtx0_txbufstatus_i              : std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     signal  gtx0_gtxtxreset_i               : std_logic;
     signal  gtx0_txresetdone_i              : std_logic;
@@ -761,9 +736,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx1_rxreset_i                  : std_logic;
     ------- Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR ------
     signal  gtx1_rxeqmix_i                  : std_logic_vector(2 downto 0);
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    signal  gtx1_rxbufreset_i               : std_logic;
-    signal  gtx1_rxbufstatus_i              : std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     signal  gtx1_rxlossofsync_i             : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -784,8 +756,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx1_txpostemphasis_i           : std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     signal  gtx1_txpreemphasis_i            : std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    signal  gtx1_txbufstatus_i              : std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     signal  gtx1_gtxtxreset_i               : std_logic;
     signal  gtx1_txresetdone_i              : std_logic;
@@ -814,9 +784,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx2_rxreset_i                  : std_logic;
     ------- Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR ------
     signal  gtx2_rxeqmix_i                  : std_logic_vector(2 downto 0);
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    signal  gtx2_rxbufreset_i               : std_logic;
-    signal  gtx2_rxbufstatus_i              : std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     signal  gtx2_rxlossofsync_i             : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -837,8 +804,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx2_txpostemphasis_i           : std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     signal  gtx2_txpreemphasis_i            : std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    signal  gtx2_txbufstatus_i              : std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     signal  gtx2_gtxtxreset_i               : std_logic;
     signal  gtx2_txresetdone_i              : std_logic;
@@ -867,9 +832,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx3_rxreset_i                  : std_logic;
     ------- Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR ------
     signal  gtx3_rxeqmix_i                  : std_logic_vector(2 downto 0);
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    signal  gtx3_rxbufreset_i               : std_logic;
-    signal  gtx3_rxbufstatus_i              : std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     signal  gtx3_rxlossofsync_i             : std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -890,8 +852,6 @@ attribute syn_noprune of rx_phase_align_fifo   : component is TRUE;
     signal  gtx3_txpostemphasis_i           : std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     signal  gtx3_txpreemphasis_i            : std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    signal  gtx3_txbufstatus_i              : std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     signal  gtx3_gtxtxreset_i               : std_logic;
     signal  gtx3_txresetdone_i              : std_logic;
@@ -1235,9 +1195,6 @@ begin
         GTX0_RXEQMIX_IN                 =>      gtx0_rxeqmix_i,
         GTX0_RXN_IN                     =>      RXN_IN(0),
         GTX0_RXP_IN                     =>      RXP_IN(0),
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        GTX0_RXBUFRESET_IN              =>      gtx0_rxbufreset_i,
-        GTX0_RXBUFSTATUS_OUT            =>      gtx0_rxbufstatus_i,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         GTX0_RXLOSSOFSYNC_OUT           =>      gtx0_rxlossofsync_i,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -1262,8 +1219,6 @@ begin
         GTX0_TXPOSTEMPHASIS_IN          =>      gtx0_txpostemphasis_i,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         GTX0_TXPREEMPHASIS_IN           =>      gtx0_txpreemphasis_i,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        GTX0_TXBUFSTATUS_OUT            =>      gtx0_txbufstatus_i,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTX0_GTXTXRESET_IN              =>      gtx0_gtxtxreset_i,
         GTX0_TXRESETDONE_OUT            =>      gtx0_txresetdone_i,
@@ -1299,9 +1254,6 @@ begin
         GTX1_RXEQMIX_IN                 =>      gtx1_rxeqmix_i,
         GTX1_RXN_IN                     =>      RXN_IN(1),
         GTX1_RXP_IN                     =>      RXP_IN(1),
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        GTX1_RXBUFRESET_IN              =>      gtx1_rxbufreset_i,
-        GTX1_RXBUFSTATUS_OUT            =>      gtx1_rxbufstatus_i,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         GTX1_RXLOSSOFSYNC_OUT           =>      gtx1_rxlossofsync_i,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -1326,8 +1278,6 @@ begin
         GTX1_TXPOSTEMPHASIS_IN          =>      gtx1_txpostemphasis_i,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         GTX1_TXPREEMPHASIS_IN           =>      gtx1_txpreemphasis_i,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        GTX1_TXBUFSTATUS_OUT            =>      gtx1_txbufstatus_i,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTX1_GTXTXRESET_IN              =>      gtx1_gtxtxreset_i,
         GTX1_TXRESETDONE_OUT            =>      gtx1_txresetdone_i,
@@ -1363,9 +1313,6 @@ begin
         GTX2_RXEQMIX_IN                 =>      gtx2_rxeqmix_i,
         GTX2_RXN_IN                     =>      RXN_IN(2),
         GTX2_RXP_IN                     =>      RXP_IN(2),
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        GTX2_RXBUFRESET_IN              =>      gtx2_rxbufreset_i,
-        GTX2_RXBUFSTATUS_OUT            =>      gtx2_rxbufstatus_i,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         GTX2_RXLOSSOFSYNC_OUT           =>      gtx2_rxlossofsync_i,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -1390,8 +1337,6 @@ begin
         GTX2_TXPOSTEMPHASIS_IN          =>      gtx2_txpostemphasis_i,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         GTX2_TXPREEMPHASIS_IN           =>      gtx2_txpreemphasis_i,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        GTX2_TXBUFSTATUS_OUT            =>      gtx2_txbufstatus_i,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTX2_GTXTXRESET_IN              =>      gtx2_gtxtxreset_i,
         GTX2_TXRESETDONE_OUT            =>      gtx2_txresetdone_i,
@@ -1427,9 +1372,6 @@ begin
         GTX3_RXEQMIX_IN                 =>      gtx3_rxeqmix_i,
         GTX3_RXN_IN                     =>      RXN_IN(3),
         GTX3_RXP_IN                     =>      RXP_IN(3),
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        GTX3_RXBUFRESET_IN              =>      gtx3_rxbufreset_i,
-        GTX3_RXBUFSTATUS_OUT            =>      gtx3_rxbufstatus_i,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         GTX3_RXLOSSOFSYNC_OUT           =>      gtx3_rxlossofsync_i,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -1454,8 +1396,6 @@ begin
         GTX3_TXPOSTEMPHASIS_IN          =>      gtx3_txpostemphasis_i,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         GTX3_TXPREEMPHASIS_IN           =>      gtx3_txpreemphasis_i,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        GTX3_TXBUFSTATUS_OUT            =>      gtx3_txbufstatus_i,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTX3_GTXTXRESET_IN              =>      gtx3_gtxtxreset_i,
         GTX3_TXRESETDONE_OUT            =>      gtx3_txresetdone_i
@@ -2683,8 +2623,7 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx0_tx_data_vio_async_in_i(31)              <= '0';
     gtx0_tx_data_vio_async_in_i(30)              <= gtx0_txresetdone_i;
     gtx0_tx_data_vio_async_in_i(29 downto 0)     <= "000000000000000000000000000000";
-    gtx0_tx_data_vio_sync_in_i(31 downto 30)     <= gtx0_txbufstatus_i;
-    gtx0_tx_data_vio_sync_in_i(29 downto 0)      <= "000000000000000000000000000000";
+    gtx0_tx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx0_loopback_i                              <= tx_data_vio_async_out_i(30 downto 28);
     gtx0_txdiffctrl_i                            <= tx_data_vio_async_out_i(27 downto 24);
     gtx0_txpreemphasis_i                         <= tx_data_vio_async_out_i(23 downto 20);
@@ -2695,7 +2634,6 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx0_rx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx0_pllrxreset_i                            <= rx_data_vio_async_out_i(31);
     gtx0_rxeqmix_i                               <= rx_data_vio_async_out_i(30 downto 28);
-    gtx0_rxbufreset_i                            <= rx_data_vio_async_out_i(27);
     gtx0_ila_in_i(84 downto 83)                  <= gtx0_rxchariscomma_i;
     gtx0_ila_in_i(82 downto 81)                  <= gtx0_rxcharisk_i;
     gtx0_ila_in_i(80 downto 79)                  <= gtx0_rxdisperr_i;
@@ -2704,17 +2642,15 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx0_ila_in_i(74)                            <= gtx0_rxbyteisaligned_i;
     gtx0_ila_in_i(73)                            <= gtx0_rxcommadet_i;
     gtx0_ila_in_i(72 downto 57)                  <= gtx0_rxdata_i;
-    gtx0_ila_in_i(56 downto 54)                  <= gtx0_rxbufstatus_i;
-    gtx0_ila_in_i(53 downto 52)                  <= gtx0_rxlossofsync_i;
-    gtx0_ila_in_i(51 downto 44)                  <= gtx0_error_count_i;
-    gtx0_ila_in_i(43 downto 0)                   <= "00000000000000000000000000000000000000000000";
+    gtx0_ila_in_i(56 downto 55)                  <= gtx0_rxlossofsync_i;
+    gtx0_ila_in_i(54 downto 47)                  <= gtx0_error_count_i;
+    gtx0_ila_in_i(46 downto 0)                   <= "00000000000000000000000000000000000000000000000";
 
     -- Chipscope connections on GTX 1
     gtx1_tx_data_vio_async_in_i(31)              <= '0';
     gtx1_tx_data_vio_async_in_i(30)              <= gtx1_txresetdone_i;
     gtx1_tx_data_vio_async_in_i(29 downto 0)     <= "000000000000000000000000000000";
-    gtx1_tx_data_vio_sync_in_i(31 downto 30)     <= gtx1_txbufstatus_i;
-    gtx1_tx_data_vio_sync_in_i(29 downto 0)      <= "000000000000000000000000000000";
+    gtx1_tx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx1_loopback_i                              <= tx_data_vio_async_out_i(30 downto 28);
     gtx1_txdiffctrl_i                            <= tx_data_vio_async_out_i(27 downto 24);
     gtx1_txpreemphasis_i                         <= tx_data_vio_async_out_i(23 downto 20);
@@ -2725,7 +2661,6 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx1_rx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx1_pllrxreset_i                            <= rx_data_vio_async_out_i(31);
     gtx1_rxeqmix_i                               <= rx_data_vio_async_out_i(30 downto 28);
-    gtx1_rxbufreset_i                            <= rx_data_vio_async_out_i(27);
     gtx1_ila_in_i(84 downto 83)                  <= gtx1_rxchariscomma_i;
     gtx1_ila_in_i(82 downto 81)                  <= gtx1_rxcharisk_i;
     gtx1_ila_in_i(80 downto 79)                  <= gtx1_rxdisperr_i;
@@ -2734,17 +2669,15 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx1_ila_in_i(74)                            <= gtx1_rxbyteisaligned_i;
     gtx1_ila_in_i(73)                            <= gtx1_rxcommadet_i;
     gtx1_ila_in_i(72 downto 57)                  <= gtx1_rxdata_i;
-    gtx1_ila_in_i(56 downto 54)                  <= gtx1_rxbufstatus_i;
-    gtx1_ila_in_i(53 downto 52)                  <= gtx1_rxlossofsync_i;
-    gtx1_ila_in_i(51 downto 44)                  <= gtx1_error_count_i;
-    gtx1_ila_in_i(43 downto 0)                   <= "00000000000000000000000000000000000000000000";
+    gtx1_ila_in_i(56 downto 55)                  <= gtx1_rxlossofsync_i;
+    gtx1_ila_in_i(54 downto 47)                  <= gtx1_error_count_i;
+    gtx1_ila_in_i(46 downto 0)                   <= "00000000000000000000000000000000000000000000000";
 
     -- Chipscope connections on GTX 2
     gtx2_tx_data_vio_async_in_i(31)              <= '0';
     gtx2_tx_data_vio_async_in_i(30)              <= gtx2_txresetdone_i;
     gtx2_tx_data_vio_async_in_i(29 downto 0)     <= "000000000000000000000000000000";
-    gtx2_tx_data_vio_sync_in_i(31 downto 30)     <= gtx2_txbufstatus_i;
-    gtx2_tx_data_vio_sync_in_i(29 downto 0)      <= "000000000000000000000000000000";
+    gtx2_tx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx2_loopback_i                              <= tx_data_vio_async_out_i(30 downto 28);
     gtx2_txdiffctrl_i                            <= tx_data_vio_async_out_i(27 downto 24);
     gtx2_txpreemphasis_i                         <= tx_data_vio_async_out_i(23 downto 20);
@@ -2755,7 +2688,6 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx2_rx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx2_pllrxreset_i                            <= rx_data_vio_async_out_i(31);
     gtx2_rxeqmix_i                               <= rx_data_vio_async_out_i(30 downto 28);
-    gtx2_rxbufreset_i                            <= rx_data_vio_async_out_i(27);
     gtx2_ila_in_i(84 downto 83)                  <= gtx2_rxchariscomma_i;
     gtx2_ila_in_i(82 downto 81)                  <= gtx2_rxcharisk_i;
     gtx2_ila_in_i(80 downto 79)                  <= gtx2_rxdisperr_i;
@@ -2764,17 +2696,15 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx2_ila_in_i(74)                            <= gtx2_rxbyteisaligned_i;
     gtx2_ila_in_i(73)                            <= gtx2_rxcommadet_i;
     gtx2_ila_in_i(72 downto 57)                  <= gtx2_rxdata_i;
-    gtx2_ila_in_i(56 downto 54)                  <= gtx2_rxbufstatus_i;
-    gtx2_ila_in_i(53 downto 52)                  <= gtx2_rxlossofsync_i;
-    gtx2_ila_in_i(51 downto 44)                  <= gtx2_error_count_i;
-    gtx2_ila_in_i(43 downto 0)                   <= "00000000000000000000000000000000000000000000";
+    gtx2_ila_in_i(56 downto 55)                  <= gtx2_rxlossofsync_i;
+    gtx2_ila_in_i(54 downto 47)                  <= gtx2_error_count_i;
+    gtx2_ila_in_i(46 downto 0)                   <= "00000000000000000000000000000000000000000000000";
 
     -- Chipscope connections on GTX 3
     gtx3_tx_data_vio_async_in_i(31)              <= '0';
     gtx3_tx_data_vio_async_in_i(30)              <= gtx3_txresetdone_i;
     gtx3_tx_data_vio_async_in_i(29 downto 0)     <= "000000000000000000000000000000";
-    gtx3_tx_data_vio_sync_in_i(31 downto 30)     <= gtx3_txbufstatus_i;
-    gtx3_tx_data_vio_sync_in_i(29 downto 0)      <= "000000000000000000000000000000";
+    gtx3_tx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx3_loopback_i                              <= tx_data_vio_async_out_i(30 downto 28);
     gtx3_txdiffctrl_i                            <= tx_data_vio_async_out_i(27 downto 24);
     gtx3_txpreemphasis_i                         <= tx_data_vio_async_out_i(23 downto 20);
@@ -2785,7 +2715,6 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx3_rx_data_vio_sync_in_i(31 downto 0)      <= "00000000000000000000000000000000";
     gtx3_pllrxreset_i                            <= rx_data_vio_async_out_i(31);
     gtx3_rxeqmix_i                               <= rx_data_vio_async_out_i(30 downto 28);
-    gtx3_rxbufreset_i                            <= rx_data_vio_async_out_i(27);
     gtx3_ila_in_i(84 downto 83)                  <= gtx3_rxchariscomma_i;
     gtx3_ila_in_i(82 downto 81)                  <= gtx3_rxcharisk_i;
     gtx3_ila_in_i(80 downto 79)                  <= gtx3_rxdisperr_i;
@@ -2794,10 +2723,9 @@ chipscope : if EXAMPLE_USE_CHIPSCOPE = 1 generate
     gtx3_ila_in_i(74)                            <= gtx3_rxbyteisaligned_i;
     gtx3_ila_in_i(73)                            <= gtx3_rxcommadet_i;
     gtx3_ila_in_i(72 downto 57)                  <= gtx3_rxdata_i;
-    gtx3_ila_in_i(56 downto 54)                  <= gtx3_rxbufstatus_i;
-    gtx3_ila_in_i(53 downto 52)                  <= gtx3_rxlossofsync_i;
-    gtx3_ila_in_i(51 downto 44)                  <= gtx3_error_count_i;
-    gtx3_ila_in_i(43 downto 0)                   <= "00000000000000000000000000000000000000000000";
+    gtx3_ila_in_i(56 downto 55)                  <= gtx3_rxlossofsync_i;
+    gtx3_ila_in_i(54 downto 47)                  <= gtx3_error_count_i;
+    gtx3_ila_in_i(46 downto 0)                   <= "00000000000000000000000000000000000000000000000";
 
 
     --Mux inputs to Chipscope modules based on mux_sel_i
@@ -2869,28 +2797,24 @@ no_chipscope : if EXAMPLE_USE_CHIPSCOPE = 0 generate
     gtx0_txpostemphasis_i                        <= tied_to_ground_vec_i(4 downto 0);
     gtx0_pllrxreset_i                            <= tied_to_ground_i;
     gtx0_rxeqmix_i                               <= tied_to_ground_vec_i(2 downto 0);
-    gtx0_rxbufreset_i                            <= tied_to_ground_i;
     gtx1_loopback_i                              <= tied_to_ground_vec_i(2 downto 0);
     gtx1_txdiffctrl_i                            <= "1010";
     gtx1_txpreemphasis_i                         <= tied_to_ground_vec_i(3 downto 0);
     gtx1_txpostemphasis_i                        <= tied_to_ground_vec_i(4 downto 0);
     gtx1_pllrxreset_i                            <= tied_to_ground_i;
     gtx1_rxeqmix_i                               <= tied_to_ground_vec_i(2 downto 0);
-    gtx1_rxbufreset_i                            <= tied_to_ground_i;
     gtx2_loopback_i                              <= tied_to_ground_vec_i(2 downto 0);
     gtx2_txdiffctrl_i                            <= "1010";
     gtx2_txpreemphasis_i                         <= tied_to_ground_vec_i(3 downto 0);
     gtx2_txpostemphasis_i                        <= tied_to_ground_vec_i(4 downto 0);
     gtx2_pllrxreset_i                            <= tied_to_ground_i;
     gtx2_rxeqmix_i                               <= tied_to_ground_vec_i(2 downto 0);
-    gtx2_rxbufreset_i                            <= tied_to_ground_i;
     gtx3_loopback_i                              <= tied_to_ground_vec_i(2 downto 0);
     gtx3_txdiffctrl_i                            <= "1010";
     gtx3_txpreemphasis_i                         <= tied_to_ground_vec_i(3 downto 0);
     gtx3_txpostemphasis_i                        <= tied_to_ground_vec_i(4 downto 0);
     gtx3_pllrxreset_i                            <= tied_to_ground_i;
     gtx3_rxeqmix_i                               <= tied_to_ground_vec_i(2 downto 0);
-    gtx3_rxbufreset_i                            <= tied_to_ground_i;
 
 
 

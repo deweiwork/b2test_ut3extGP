@@ -23,6 +23,7 @@ generic (
 );
 port (
     Reset_n                  : in  std_logic;
+    lane_up                  : in  std_logic;
 
     tx_traffic_ready         : out std_logic;
     rx_traffic_ready         : out std_logic;
@@ -30,7 +31,6 @@ port (
     rx_elastic_buf_sync_done : in  std_logic;
     gp_sync_can_start        : out std_logic;
 
-    lane_up                  : in  std_logic;
 
     TX_K                     : out std_logic_vector((ctrl_code_length_per_ch -1) downto 0) ;
     RX_K                     : in  std_logic_vector((ctrl_code_length_per_ch -1) downto 0) ;

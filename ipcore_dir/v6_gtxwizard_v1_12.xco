@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Mar 18 11:18:17 2019
+# Date: Tue Mar 19 03:47:49 2019
 #
 ##############################################################
 #
@@ -350,8 +350,8 @@ CSET use_port_plllkdet=true
 CSET use_port_plllkdeten=true
 CSET use_port_pllpowerdown=false
 CSET use_port_refclkpowerdown=false
-CSET use_port_rxbufreset=true
-CSET use_port_rxbufstatus=true
+CSET use_port_rxbufreset=false
+CSET use_port_rxbufstatus=false
 CSET use_port_rxbyteisaligned=true
 CSET use_port_rxbyterealign=false
 CSET use_port_rxcdrreset=false
@@ -369,7 +369,7 @@ CSET use_port_rxrundisp=true
 CSET use_port_rxslide=false
 CSET use_port_rxstatus=false
 CSET use_port_rxvalid=false
-CSET use_port_txbufstatus=true
+CSET use_port_txbufstatus=false
 CSET use_port_txbypass8b10b=false
 CSET use_port_txchardispmode=false
 CSET use_port_txchardispval=false
@@ -408,4 +408,4 @@ CSET wideband_highpass_mix=Use_RXEQMIX_Port
 MISC pkg_timestamp=2011-04-08T05:24:23Z
 # END Extra information
 GENERATE
-# CRC: 1d16f439
+# CRC: 6097f1fc

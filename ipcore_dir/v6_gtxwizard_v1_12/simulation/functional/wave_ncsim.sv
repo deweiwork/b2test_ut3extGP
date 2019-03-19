@@ -101,9 +101,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXEQMIX_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXN_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXP_IN
-  waveform  add  -label Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports  -comment  Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXBUFRESET_IN
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT
   waveform  add  -label Receive_Ports_-_RX_Loss-of-sync_State_Machine  -comment  Receive_Ports_-_RX_Loss-of-sync_State_Machine
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT
   waveform  add  -label Receive_Ports_-_RX_PLL_Ports  -comment  Receive_Ports_-_RX_PLL_Ports
@@ -128,8 +125,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN
   waveform  add  -label Transmit_Ports_-_TX_Driver_and_OOB_signalling  -comment  Transmit_Ports_-_TX_Driver_and_OOB_signalling
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN
-  waveform  add  -label Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment  -comment  Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT
   waveform  add  -label Transmit_Ports_-_TX_PLL_Ports  -comment  Transmit_Ports_-_TX_PLL_Ports
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:GTXTXRESET_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx0_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT
@@ -157,9 +152,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXEQMIX_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXN_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXP_IN
-  waveform  add  -label Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports  -comment  Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXBUFRESET_IN
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT
   waveform  add  -label Receive_Ports_-_RX_Loss-of-sync_State_Machine  -comment  Receive_Ports_-_RX_Loss-of-sync_State_Machine
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT
   waveform  add  -label Receive_Ports_-_RX_PLL_Ports  -comment  Receive_Ports_-_RX_PLL_Ports
@@ -184,8 +176,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN
   waveform  add  -label Transmit_Ports_-_TX_Driver_and_OOB_signalling  -comment  Transmit_Ports_-_TX_Driver_and_OOB_signalling
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN
-  waveform  add  -label Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment  -comment  Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT
   waveform  add  -label Transmit_Ports_-_TX_PLL_Ports  -comment  Transmit_Ports_-_TX_PLL_Ports
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:GTXTXRESET_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx1_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT
@@ -213,9 +203,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXEQMIX_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXN_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXP_IN
-  waveform  add  -label Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports  -comment  Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXBUFRESET_IN
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT
   waveform  add  -label Receive_Ports_-_RX_Loss-of-sync_State_Machine  -comment  Receive_Ports_-_RX_Loss-of-sync_State_Machine
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT
   waveform  add  -label Receive_Ports_-_RX_PLL_Ports  -comment  Receive_Ports_-_RX_PLL_Ports
@@ -240,8 +227,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN
   waveform  add  -label Transmit_Ports_-_TX_Driver_and_OOB_signalling  -comment  Transmit_Ports_-_TX_Driver_and_OOB_signalling
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN
-  waveform  add  -label Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment  -comment  Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT
   waveform  add  -label Transmit_Ports_-_TX_PLL_Ports  -comment  Transmit_Ports_-_TX_PLL_Ports
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:GTXTXRESET_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx2_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT
@@ -269,9 +254,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXEQMIX_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXN_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXP_IN
-  waveform  add  -label Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports  -comment  Receive_Ports_-_RX_Elastic_Buffer_and_Phase_Alignment_Ports
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXBUFRESET_IN
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXBUFSTATUS_OUT
   waveform  add  -label Receive_Ports_-_RX_Loss-of-sync_State_Machine  -comment  Receive_Ports_-_RX_Loss-of-sync_State_Machine
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:RXLOSSOFSYNC_OUT
   waveform  add  -label Receive_Ports_-_RX_PLL_Ports  -comment  Receive_Ports_-_RX_PLL_Ports
@@ -296,8 +278,6 @@
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXPOSTEMPHASIS_IN
   waveform  add  -label Transmit_Ports_-_TX_Driver_and_OOB_signalling  -comment  Transmit_Ports_-_TX_Driver_and_OOB_signalling
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXPREEMPHASIS_IN
-  waveform  add  -label Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment  -comment  Transmit_Ports_-_TX_Elastic_Buffer_and_Phase_Alignment
-  waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXBUFSTATUS_OUT
   waveform  add  -label Transmit_Ports_-_TX_PLL_Ports  -comment  Transmit_Ports_-_TX_PLL_Ports
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:GTXTXRESET_IN
   waveform  add  -signals  :v6_gtxwizard_v1_12_top_i:v6_gtxwizard_v1_12_i:gtx3_v6_gtxwizard_v1_12_i:TXRESETDONE_OUT

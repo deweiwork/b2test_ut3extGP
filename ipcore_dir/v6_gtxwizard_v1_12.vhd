@@ -105,9 +105,6 @@ port
     GTX0_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX0_RXN_IN                             : in   std_logic;
     GTX0_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX0_RXBUFRESET_IN                      : in   std_logic;
-    GTX0_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX0_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -132,8 +129,6 @@ port
     GTX0_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX0_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX0_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX0_GTXTXRESET_IN                      : in   std_logic;
     GTX0_TXRESETDONE_OUT                    : out  std_logic;
@@ -166,9 +161,6 @@ port
     GTX1_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX1_RXN_IN                             : in   std_logic;
     GTX1_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX1_RXBUFRESET_IN                      : in   std_logic;
-    GTX1_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX1_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -193,8 +185,6 @@ port
     GTX1_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX1_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX1_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX1_GTXTXRESET_IN                      : in   std_logic;
     GTX1_TXRESETDONE_OUT                    : out  std_logic;
@@ -227,9 +217,6 @@ port
     GTX2_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX2_RXN_IN                             : in   std_logic;
     GTX2_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX2_RXBUFRESET_IN                      : in   std_logic;
-    GTX2_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX2_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -254,8 +241,6 @@ port
     GTX2_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX2_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX2_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX2_GTXTXRESET_IN                      : in   std_logic;
     GTX2_TXRESETDONE_OUT                    : out  std_logic;
@@ -288,9 +273,6 @@ port
     GTX3_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX3_RXN_IN                             : in   std_logic;
     GTX3_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX3_RXBUFRESET_IN                      : in   std_logic;
-    GTX3_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX3_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -315,8 +297,6 @@ port
     GTX3_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX3_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX3_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX3_GTXTXRESET_IN                      : in   std_logic;
     GTX3_TXRESETDONE_OUT                    : out  std_logic
@@ -389,9 +369,6 @@ port
     RXEQMIX_IN                              : in   std_logic_vector(2 downto 0);
     RXN_IN                                  : in   std_logic;
     RXP_IN                                  : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    RXBUFRESET_IN                           : in   std_logic;
-    RXBUFSTATUS_OUT                         : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     RXLOSSOFSYNC_OUT                        : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -416,8 +393,6 @@ port
     TXPOSTEMPHASIS_IN                       : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     TXPREEMPHASIS_IN                        : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    TXBUFSTATUS_OUT                         : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTXTXRESET_IN                           : in   std_logic;
     MGTREFCLKTX_IN                          : in   std_logic_vector(1 downto 0);
@@ -488,9 +463,6 @@ begin
         RXEQMIX_IN                      =>      GTX0_RXEQMIX_IN,
         RXN_IN                          =>      GTX0_RXN_IN,
         RXP_IN                          =>      GTX0_RXP_IN,
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        RXBUFRESET_IN                   =>      GTX0_RXBUFRESET_IN,
-        RXBUFSTATUS_OUT                 =>      GTX0_RXBUFSTATUS_OUT,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         RXLOSSOFSYNC_OUT                =>      GTX0_RXLOSSOFSYNC_OUT,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -515,8 +487,6 @@ begin
         TXPOSTEMPHASIS_IN               =>      GTX0_TXPOSTEMPHASIS_IN,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         TXPREEMPHASIS_IN                =>      GTX0_TXPREEMPHASIS_IN,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        TXBUFSTATUS_OUT                 =>      GTX0_TXBUFSTATUS_OUT,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTXTXRESET_IN                   =>      GTX0_GTXTXRESET_IN,
         MGTREFCLKTX_IN                  =>      gtx0_mgtrefclkrx_i,
@@ -567,9 +537,6 @@ begin
         RXEQMIX_IN                      =>      GTX1_RXEQMIX_IN,
         RXN_IN                          =>      GTX1_RXN_IN,
         RXP_IN                          =>      GTX1_RXP_IN,
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        RXBUFRESET_IN                   =>      GTX1_RXBUFRESET_IN,
-        RXBUFSTATUS_OUT                 =>      GTX1_RXBUFSTATUS_OUT,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         RXLOSSOFSYNC_OUT                =>      GTX1_RXLOSSOFSYNC_OUT,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -594,8 +561,6 @@ begin
         TXPOSTEMPHASIS_IN               =>      GTX1_TXPOSTEMPHASIS_IN,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         TXPREEMPHASIS_IN                =>      GTX1_TXPREEMPHASIS_IN,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        TXBUFSTATUS_OUT                 =>      GTX1_TXBUFSTATUS_OUT,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTXTXRESET_IN                   =>      GTX1_GTXTXRESET_IN,
         MGTREFCLKTX_IN                  =>      gtx1_mgtrefclkrx_i,
@@ -646,9 +611,6 @@ begin
         RXEQMIX_IN                      =>      GTX2_RXEQMIX_IN,
         RXN_IN                          =>      GTX2_RXN_IN,
         RXP_IN                          =>      GTX2_RXP_IN,
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        RXBUFRESET_IN                   =>      GTX2_RXBUFRESET_IN,
-        RXBUFSTATUS_OUT                 =>      GTX2_RXBUFSTATUS_OUT,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         RXLOSSOFSYNC_OUT                =>      GTX2_RXLOSSOFSYNC_OUT,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -673,8 +635,6 @@ begin
         TXPOSTEMPHASIS_IN               =>      GTX2_TXPOSTEMPHASIS_IN,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         TXPREEMPHASIS_IN                =>      GTX2_TXPREEMPHASIS_IN,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        TXBUFSTATUS_OUT                 =>      GTX2_TXBUFSTATUS_OUT,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTXTXRESET_IN                   =>      GTX2_GTXTXRESET_IN,
         MGTREFCLKTX_IN                  =>      gtx2_mgtrefclkrx_i,
@@ -725,9 +685,6 @@ begin
         RXEQMIX_IN                      =>      GTX3_RXEQMIX_IN,
         RXN_IN                          =>      GTX3_RXN_IN,
         RXP_IN                          =>      GTX3_RXP_IN,
-        -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        RXBUFRESET_IN                   =>      GTX3_RXBUFRESET_IN,
-        RXBUFSTATUS_OUT                 =>      GTX3_RXBUFSTATUS_OUT,
         --------------- Receive Ports - RX Loss-of-sync State Machine --------------
         RXLOSSOFSYNC_OUT                =>      GTX3_RXLOSSOFSYNC_OUT,
         ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -752,8 +709,6 @@ begin
         TXPOSTEMPHASIS_IN               =>      GTX3_TXPOSTEMPHASIS_IN,
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         TXPREEMPHASIS_IN                =>      GTX3_TXPREEMPHASIS_IN,
-        ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        TXBUFSTATUS_OUT                 =>      GTX3_TXBUFSTATUS_OUT,
         ----------------------- Transmit Ports - TX PLL Ports ----------------------
         GTXTXRESET_IN                   =>      GTX3_GTXTXRESET_IN,
         MGTREFCLKTX_IN                  =>      gtx3_mgtrefclkrx_i,

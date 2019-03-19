@@ -95,9 +95,6 @@ divider add "Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXN_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXP_IN
-divider add "Receive Ports - RX Elastic Buffer and Phase Alignment Ports"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 divider add "Receive Ports - RX Loss-of-sync State Machine"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 divider add "Receive Ports - RX PLL Ports"
@@ -122,8 +119,6 @@ wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizar
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 divider add "Transmit Ports - TX Driver and OOB signalling"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-divider add "Transmit Ports - TX Elastic Buffer and Phase Alignment"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 divider add "Transmit Ports - TX PLL Ports"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -150,9 +145,6 @@ divider add "Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXN_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXP_IN
-divider add "Receive Ports - RX Elastic Buffer and Phase Alignment Ports"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 divider add "Receive Ports - RX Loss-of-sync State Machine"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 divider add "Receive Ports - RX PLL Ports"
@@ -177,8 +169,6 @@ wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizar
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 divider add "Transmit Ports - TX Driver and OOB signalling"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-divider add "Transmit Ports - TX Elastic Buffer and Phase Alignment"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 divider add "Transmit Ports - TX PLL Ports"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -205,9 +195,6 @@ divider add "Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXN_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXP_IN
-divider add "Receive Ports - RX Elastic Buffer and Phase Alignment Ports"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 divider add "Receive Ports - RX Loss-of-sync State Machine"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 divider add "Receive Ports - RX PLL Ports"
@@ -232,8 +219,6 @@ wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizar
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 divider add "Transmit Ports - TX Driver and OOB signalling"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-divider add "Transmit Ports - TX Elastic Buffer and Phase Alignment"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 divider add "Transmit Ports - TX PLL Ports"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -260,9 +245,6 @@ divider add "Receive Ports - RX Driver,OOB signalling,Coupling and Eq.,CDR"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXN_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXP_IN
-divider add "Receive Ports - RX Elastic Buffer and Phase Alignment Ports"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 divider add "Receive Ports - RX Loss-of-sync State Machine"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 divider add "Receive Ports - RX PLL Ports"
@@ -287,8 +269,6 @@ wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizar
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 divider add "Transmit Ports - TX Driver and OOB signalling"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-divider add "Transmit Ports - TX Elastic Buffer and Phase Alignment"
-wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 divider add "Transmit Ports - TX PLL Ports"
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 wave add /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT

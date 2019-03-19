@@ -104,9 +104,6 @@ port
     RXEQMIX_IN                              : in   std_logic_vector(2 downto 0);
     RXN_IN                                  : in   std_logic;
     RXP_IN                                  : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    RXBUFRESET_IN                           : in   std_logic;
-    RXBUFSTATUS_OUT                         : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     RXLOSSOFSYNC_OUT                        : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -131,8 +128,6 @@ port
     TXPOSTEMPHASIS_IN                       : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     TXPREEMPHASIS_IN                        : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    TXBUFSTATUS_OUT                         : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTXTXRESET_IN                           : in   std_logic;
     MGTREFCLKTX_IN                          : in   std_logic_vector(1 downto 0);
@@ -500,8 +495,8 @@ begin
         RXN                             =>      RXN_IN,
         RXP                             =>      RXP_IN,
         -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-        RXBUFRESET                      =>      RXBUFRESET_IN,
-        RXBUFSTATUS                     =>      RXBUFSTATUS_OUT,
+        RXBUFRESET                      =>      tied_to_ground_i,
+        RXBUFSTATUS                     =>      open,
         RXCHANISALIGNED                 =>      open,
         RXCHANREALIGN                   =>      open,
         RXDLYALIGNDISABLE               =>      tied_to_ground_i,
@@ -589,7 +584,7 @@ begin
         --------------- Transmit Ports - TX Driver and OOB signalling --------------
         TXPREEMPHASIS                   =>      TXPREEMPHASIS_IN,
         ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-        TXBUFSTATUS                     =>      TXBUFSTATUS_OUT,
+        TXBUFSTATUS                     =>      open,
         -------- Transmit Ports - TX Elastic Buffer and Phase Alignment Ports ------
         TXDLYALIGNDISABLE               =>      tied_to_vcc_i,
         TXDLYALIGNMONENB                =>      tied_to_ground_i,

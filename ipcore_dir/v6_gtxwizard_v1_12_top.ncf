@@ -209,7 +209,7 @@ INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_MODE_RESET_BUF
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_RATE_RESET_BUF                   = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF                = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF2               = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FULL";
+INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FAST";
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_HI_CNT                         = 4'b1000;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_LO_CNT                         = 4'b0000;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i RX_XCLK_SEL                            = "RXREC";
@@ -224,8 +224,8 @@ INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_ADJ_LEN     
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_DET_LEN                        = 1;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_INSERT_IDLE_FLAG               = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_KEEP_IDLE                      = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 20;
-INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 18;
+INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 16;
+INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 14;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_PRECEDENCE                     = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_REPEAT_WAIT                    = 0;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_1_1                        = 10'b0100000000;
@@ -242,10 +242,10 @@ INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_2_USE   
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CLK_CORRECT_USE                        = "FALSE";
 
 ##----------------------Channel Bonding----------------------
-INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 7;
+INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_2_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_KEEP_ALIGN                   = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0101111100;
+INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_2                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_3                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_4                      = 10'b0000000000;
@@ -422,7 +422,7 @@ INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_MODE_RESET_BUF
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_RATE_RESET_BUF                   = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF                = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF2               = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FULL";
+INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FAST";
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_HI_CNT                         = 4'b1000;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_LO_CNT                         = 4'b0000;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i RX_XCLK_SEL                            = "RXREC";
@@ -437,8 +437,8 @@ INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_ADJ_LEN     
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_DET_LEN                        = 1;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_INSERT_IDLE_FLAG               = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_KEEP_IDLE                      = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 20;
-INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 18;
+INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 16;
+INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 14;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_PRECEDENCE                     = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_REPEAT_WAIT                    = 0;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_1_1                        = 10'b0100000000;
@@ -455,10 +455,10 @@ INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_2_USE   
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CLK_CORRECT_USE                        = "FALSE";
 
 ##----------------------Channel Bonding----------------------
-INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 7;
+INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_2_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_KEEP_ALIGN                   = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0101111100;
+INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_2                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_3                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_4                      = 10'b0000000000;
@@ -635,7 +635,7 @@ INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_MODE_RESET_BUF
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_RATE_RESET_BUF                   = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF                = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF2               = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FULL";
+INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FAST";
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_HI_CNT                         = 4'b1000;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_LO_CNT                         = 4'b0000;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i RX_XCLK_SEL                            = "RXREC";
@@ -650,8 +650,8 @@ INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_ADJ_LEN     
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_DET_LEN                        = 1;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_INSERT_IDLE_FLAG               = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_KEEP_IDLE                      = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 20;
-INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 18;
+INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 16;
+INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 14;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_PRECEDENCE                     = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_REPEAT_WAIT                    = 0;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_1_1                        = 10'b0100000000;
@@ -668,10 +668,10 @@ INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_2_USE   
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CLK_CORRECT_USE                        = "FALSE";
 
 ##----------------------Channel Bonding----------------------
-INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 7;
+INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_2_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_KEEP_ALIGN                   = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0101111100;
+INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_2                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_3                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_4                      = 10'b0000000000;
@@ -848,7 +848,7 @@ INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_MODE_RESET_BUF
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_RATE_RESET_BUF                   = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF                = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_EN_REALIGN_RESET_BUF2               = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FULL";
+INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_FIFO_ADDR_MODE                      = "FAST";
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_HI_CNT                         = 4'b1000;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_IDLE_LO_CNT                         = 4'b0000;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i RX_XCLK_SEL                            = "RXREC";
@@ -863,8 +863,8 @@ INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_ADJ_LEN     
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_DET_LEN                        = 1;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_INSERT_IDLE_FLAG               = "FALSE";
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_KEEP_IDLE                      = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 20;
-INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 18;
+INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MAX_LAT                        = 16;
+INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_MIN_LAT                        = 14;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_PRECEDENCE                     = "TRUE";
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_REPEAT_WAIT                    = 0;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_1_1                        = 10'b0100000000;
@@ -881,10 +881,10 @@ INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_COR_SEQ_2_USE   
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CLK_CORRECT_USE                        = "FALSE";
 
 ##----------------------Channel Bonding----------------------
-INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 7;
+INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_1_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_2_MAX_SKEW                   = 1;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_KEEP_ALIGN                   = "FALSE";
-INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0101111100;
+INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_1                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_2                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_3                      = 10'b0000000000;
 INST v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/gtxe1_i CHAN_BOND_SEQ_1_4                      = 10'b0000000000;

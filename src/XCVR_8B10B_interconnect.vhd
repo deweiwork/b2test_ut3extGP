@@ -173,9 +173,6 @@ port
     GTX0_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX0_RXN_IN                             : in   std_logic;
     GTX0_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX0_RXBUFRESET_IN                      : in   std_logic;
-    GTX0_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX0_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -200,8 +197,6 @@ port
     GTX0_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX0_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX0_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX0_GTXTXRESET_IN                      : in   std_logic;
     GTX0_TXRESETDONE_OUT                    : out  std_logic;
@@ -234,9 +229,6 @@ port
     GTX1_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX1_RXN_IN                             : in   std_logic;
     GTX1_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX1_RXBUFRESET_IN                      : in   std_logic;
-    GTX1_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX1_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -261,8 +253,6 @@ port
     GTX1_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX1_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX1_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX1_GTXTXRESET_IN                      : in   std_logic;
     GTX1_TXRESETDONE_OUT                    : out  std_logic;
@@ -295,9 +285,6 @@ port
     GTX2_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX2_RXN_IN                             : in   std_logic;
     GTX2_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX2_RXBUFRESET_IN                      : in   std_logic;
-    GTX2_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX2_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -322,8 +309,6 @@ port
     GTX2_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX2_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX2_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX2_GTXTXRESET_IN                      : in   std_logic;
     GTX2_TXRESETDONE_OUT                    : out  std_logic;
@@ -356,9 +341,6 @@ port
     GTX3_RXEQMIX_IN                         : in   std_logic_vector(2 downto 0);
     GTX3_RXN_IN                             : in   std_logic;
     GTX3_RXP_IN                             : in   std_logic;
-    -------- Receive Ports - RX Elastic Buffer and Phase Alignment Ports -------
-    GTX3_RXBUFRESET_IN                      : in   std_logic;
-    GTX3_RXBUFSTATUS_OUT                    : out  std_logic_vector(2 downto 0);
     --------------- Receive Ports - RX Loss-of-sync State Machine --------------
     GTX3_RXLOSSOFSYNC_OUT                   : out  std_logic_vector(1 downto 0);
     ------------------------ Receive Ports - RX PLL Ports ----------------------
@@ -383,8 +365,6 @@ port
     GTX3_TXPOSTEMPHASIS_IN                  : in   std_logic_vector(4 downto 0);
     --------------- Transmit Ports - TX Driver and OOB signalling --------------
     GTX3_TXPREEMPHASIS_IN                   : in   std_logic_vector(3 downto 0);
-    ----------- Transmit Ports - TX Elastic Buffer and Phase Alignment ---------
-    GTX3_TXBUFSTATUS_OUT                    : out  std_logic_vector(1 downto 0);
     ----------------------- Transmit Ports - TX PLL Ports ----------------------
     GTX3_GTXTXRESET_IN                      : in   std_logic;
     GTX3_TXRESETDONE_OUT                    : out  std_logic
@@ -439,8 +419,6 @@ begin
     --ready-internal
     rx_traffic_ready_internal_ch <= RX_traffic_ready_buf_ch when scr_para_Data_gen_check_form_this_module = '1';
     tx_traffic_ready_internal_ch <= TX_traffic_ready_buf_ch when scr_para_Data_gen_check_form_this_module = '1';
-    --for
-    elastic_buf_en <= not(XCVR_TxRx_rst);
 
     --XCVR module connect
 
@@ -699,12 +677,11 @@ begin
         traffic : entity work.traffic
             port map(
                 Reset_n                  => RST_N,
+                Lane_up                  => lane_up, 
 
                 tx_traffic_ready         => TX_traffic_ready_ch(i),
                 rx_traffic_ready         => RX_traffic_ready_ch(i),
 
-                rx_elastic_buf_done      => rx_elastic_buf_aligned(i),
-                Lane_up                  => lane_up, 
 
                 rx_elastic_buf_sync_done => elastic_buf_sync_done,
                 gp_sync_can_start        => open,
@@ -721,7 +698,7 @@ begin
             );
     end generate generate_traffic_loop;
     
-    ch_sync_buf_4ch : entity work.ch_sync_buffer
+    ch_sync_buf_4ch : entity work.ch_sync_buffer_4ch
     port map(
         ch_sync_buffer_data_In          => rx_Para_data_to_sync_buf_ch,
 
@@ -735,7 +712,7 @@ begin
         ch_sync_buffer_directly_pass    => not(grouping_enable),
         
         CLK                             => rx_clk_buf_out(0),
-        RST_N                           => RST_N
+        Reset_n                         => RST_N
     );   
 
     loop_connect_pattern_detect_and_sync_status : for i in 0 to (num_of_xcvr_ch -1) generate
@@ -758,7 +735,7 @@ begin
         Tx_xcvrRstIp_is_Ready    => XCVR_TX_ready_ch,
         Rx_xcvrRstIp_is_Ready    => XCVR_RX_ready_ch,
 
-        RX_elastic_buf_overflow  => elastic_buf_overflow
+        RX_elastic_buf_overflow  => elastic_buf_overflow,
         rx_sync_status           => rx_syncstatus_ch,
         rx_pattern_detected      => rx_patterndetect_ch,
         RX_errdetect             => rx_err_detec_ch,

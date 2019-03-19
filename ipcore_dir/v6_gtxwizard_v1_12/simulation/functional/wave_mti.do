@@ -99,9 +99,6 @@ add wave -noupdate -divider {Receive Ports - RX Driver,OOB signalling,Coupling a
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXN_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXP_IN
-add wave -noupdate -divider {Receive Ports - RX Elastic Buffer and Phase Alignment Ports }
-add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 add wave -noupdate -divider {Receive Ports - RX Loss-of-sync State Machine }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 add wave -noupdate -divider {Receive Ports - RX PLL Ports }
@@ -126,8 +123,6 @@ add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 add wave -noupdate -divider {Transmit Ports - TX Driver and OOB signalling }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-add wave -noupdate -divider {Transmit Ports - TX Elastic Buffer and Phase Alignment }
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 add wave -noupdate -divider {Transmit Ports - TX PLL Ports }
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx0_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -155,9 +150,6 @@ add wave -noupdate -divider {Receive Ports - RX Driver,OOB signalling,Coupling a
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXN_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXP_IN
-add wave -noupdate -divider {Receive Ports - RX Elastic Buffer and Phase Alignment Ports }
-add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 add wave -noupdate -divider {Receive Ports - RX Loss-of-sync State Machine }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 add wave -noupdate -divider {Receive Ports - RX PLL Ports }
@@ -182,8 +174,6 @@ add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 add wave -noupdate -divider {Transmit Ports - TX Driver and OOB signalling }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-add wave -noupdate -divider {Transmit Ports - TX Elastic Buffer and Phase Alignment }
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 add wave -noupdate -divider {Transmit Ports - TX PLL Ports }
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx1_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -211,9 +201,6 @@ add wave -noupdate -divider {Receive Ports - RX Driver,OOB signalling,Coupling a
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXN_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXP_IN
-add wave -noupdate -divider {Receive Ports - RX Elastic Buffer and Phase Alignment Ports }
-add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 add wave -noupdate -divider {Receive Ports - RX Loss-of-sync State Machine }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 add wave -noupdate -divider {Receive Ports - RX PLL Ports }
@@ -238,8 +225,6 @@ add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 add wave -noupdate -divider {Transmit Ports - TX Driver and OOB signalling }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-add wave -noupdate -divider {Transmit Ports - TX Elastic Buffer and Phase Alignment }
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 add wave -noupdate -divider {Transmit Ports - TX PLL Ports }
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx2_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT
@@ -267,9 +252,6 @@ add wave -noupdate -divider {Receive Ports - RX Driver,OOB signalling,Coupling a
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXEQMIX_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXN_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXP_IN
-add wave -noupdate -divider {Receive Ports - RX Elastic Buffer and Phase Alignment Ports }
-add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXBUFRESET_IN
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXBUFSTATUS_OUT
 add wave -noupdate -divider {Receive Ports - RX Loss-of-sync State Machine }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/RXLOSSOFSYNC_OUT
 add wave -noupdate -divider {Receive Ports - RX PLL Ports }
@@ -294,8 +276,6 @@ add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXPOSTEMPHASIS_IN
 add wave -noupdate -divider {Transmit Ports - TX Driver and OOB signalling }
 add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXPREEMPHASIS_IN
-add wave -noupdate -divider {Transmit Ports - TX Elastic Buffer and Phase Alignment }
-add wave -noupdate -format Literal -radix hexadecimal /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXBUFSTATUS_OUT
 add wave -noupdate -divider {Transmit Ports - TX PLL Ports }
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/GTXTXRESET_IN
 add wave -noupdate -format Logic /DEMO_TB/v6_gtxwizard_v1_12_top_i/v6_gtxwizard_v1_12_i/gtx3_v6_gtxwizard_v1_12_i/TXRESETDONE_OUT

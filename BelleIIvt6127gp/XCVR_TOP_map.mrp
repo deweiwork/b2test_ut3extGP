@@ -10,23 +10,23 @@ Target Device  : xc6vhx380t
 Target Package : ff1923
 Target Speed   : -2
 Mapper Version : virtex6 -- $Revision: 1.55 $
-Mapped Date    : Sun Mar 17 15:45:46 2019
+Mapped Date    : Tue Mar 19 11:52:40 2019
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,884 out of 478,080    1%
-    Number used as Flip Flops:               1,882
+  Number of Slice Registers:                 2,785 out of 478,080    1%
+    Number used as Flip Flops:               2,783
     Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,395 out of 239,040    1%
-    Number used as logic:                      711 out of 239,040    1%
-      Number using O6 output only:             383
+  Number of Slice LUTs:                      1,784 out of 239,040    1%
+    Number used as logic:                      837 out of 239,040    1%
+      Number using O6 output only:             517
       Number using O5 output only:             101
-      Number using O5 and O6:                  227
+      Number using O5 and O6:                  219
       Number used as ROM:                        0
     Number used as Memory:                     276 out of  73,120    1%
       Number used as Dual Port RAM:              0
@@ -35,20 +35,20 @@ Slice Logic Utilization:
         Number using O6 output only:           186
         Number using O5 output only:             2
         Number using O5 and O6:                 88
-    Number used exclusively as route-thrus:    408
-      Number with same-slice register load:    245
-      Number with same-slice carry load:       163
-      Number with other load:                    0
+    Number used exclusively as route-thrus:    671
+      Number with same-slice register load:    505
+      Number with same-slice carry load:       103
+      Number with other load:                   63
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   694 out of  59,760    1%
-  Number of LUT Flip Flop pairs used:        1,988
-    Number with an unused Flip Flop:           585 out of   1,988   29%
-    Number with an unused LUT:                 593 out of   1,988   29%
-    Number of fully used LUT-FF pairs:         810 out of   1,988   40%
-    Number of unique control sets:             158
+  Number of occupied Slices:                   893 out of  59,760    1%
+  Number of LUT Flip Flop pairs used:        2,723
+    Number with an unused Flip Flop:           682 out of   2,723   25%
+    Number with an unused LUT:                 939 out of   2,723   34%
+    Number of fully used LUT-FF pairs:       1,102 out of   2,723   40%
+    Number of unique control sets:             156
     Number of slice register sites lost
-      to control set restrictions:             584 out of 478,080    1%
+      to control set restrictions:             603 out of 478,080    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -61,7 +61,6 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                       142 out of     720   19%
     Number of LOCed IOBs:                        3 out of     142    2%
-    IOB Flip Flops:                             64
     Number of bonded IPADs:                     10
       Number of LOCed IPADs:                     1 out of      10   10%
     Number of bonded OPADs:                      8
@@ -76,9 +75,7 @@ Specific Feature Utilization:
     Number used as BUFGs:                       10
     Number used as BUFGCTRLs:                    0
   Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
-  Number of OLOGICE1/OSERDESE1s:                64 out of     720    8%
-    Number used as OLOGICE1s:                   64
-    Number used as OSERDESE1s:                   0
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
   Number of BSCANs:                              1 out of       4   25%
   Number of BUFHCEs:                             0 out of     216    0%
   Number of BUFIODQSs:                           0 out of      72    0%
@@ -101,11 +98,11 @@ Specific Feature Utilization:
   Number of TEMAC_SINGLEs:                       0 out of       4    0%
 
   Number of RPM macros:           28
-Average Fanout of Non-Clock Nets:                2.56
+Average Fanout of Non-Clock Nets:                2.60
 
-Peak Memory Usage:  5139 MB
-Total REAL time to MAP completion:  1 mins 23 secs 
-Total CPU time to MAP completion:   1 mins 22 secs 
+Peak Memory Usage:  5156 MB
+Total REAL time to MAP completion:  1 mins 44 secs 
+Total CPU time to MAP completion:   1 mins 43 secs 
 
 Table of Contents
 -----------------
@@ -129,11 +126,11 @@ Section 1 - Errors
 Section 2 - Warnings
 --------------------
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<13> is sourced
+   Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_1<13> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_1<13> is sourced
+   Connect_XVCR_Module_loop[0].XCVR_Module_gen/chip_scope_ctrl_0<13> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -946,70 +943,70 @@ Section 6 - IOB Properties
 | TX_ser_bnak<0><3>                  | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
 | XCVR_Ref_Clock_in                  | IPAD             | INPUT     |                      |       |          |      |              |          |          |
 | XCVR_Ref_Clock_in_N                | IPAD             | INPUT     |                      |       |          |      |              |          |          |
-| error_cnt_ch_bank<0><0><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><0><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><1><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><2><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| error_cnt_ch_bank<0><3><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| error_cnt_ch_bank<0><0><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><0><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><1><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><2><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><8>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><9>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><10>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><11>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><12>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><13>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><14>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| error_cnt_ch_bank<0><3><15>        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ext_rx_para_data_clk_bank<0><0>    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ext_rx_para_data_clk_bank<0><1>    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ext_rx_para_data_clk_bank<0><2>    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
