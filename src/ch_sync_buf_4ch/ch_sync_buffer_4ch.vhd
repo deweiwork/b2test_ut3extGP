@@ -85,13 +85,13 @@ begin
                     for i in 0 to (grouped_ch-1) loop
                         if (cnt_ch(i) /= 0) then
                             sync_status <= sync_done;
-                        elsif (ch_sync_buffer_data_In(i) = sync_pattern) then
-                            if (sync_pattern = (2**ch_sync_buffer_Length_power -1)) then
+                        elsif (sync_buf_ch(i)(0) = sync_pattern)then
+                            if (sync_pattern = (2**ch_sync_buffer_Length_power -2)) then
                                 ch_sync_buffer_overflow_r   <= '1';
                             else
                                 cnt_ch(i)   <= cnt_ch(i)+1;
-                                sync_status <= sync_start;
                                 ch_sync_buffer_overflow_r   <= '0';
+                                sync_status <= sync_start;
                             end if ;
                         end if;
                     end loop;

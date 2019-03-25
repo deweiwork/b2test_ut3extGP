@@ -8,19 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/B1409_Server/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/B1409_Server/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/frame_check.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/frame_check.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/B1409_Server/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/frame_gen.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/frame_gen.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/B1409_Server/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/v6_gtxwizard_v1_12_top.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12/example_design/v6_gtxwizard_v1_12_top.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/B1409_Server/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12_gtx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/dzwei-home/Desktop/ut3extGP/ipcore_dir/v6_gtxwizard_v1_12_gtx.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
