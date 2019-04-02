@@ -60,7 +60,7 @@ architecture XCVR_TOP_connect of XCVR_TOP is
     signal test_Clock                   : std_logic ;
 begin
     --set clock port on ut3
-    CLK_SEL         <= '1';--'1' when use ext127 clk
+    CLK_SEL         <= '0' when ref_clock_from_ext = '1' else '0';--'0' when use ext127 clk
     CLK_SEL_127M    <= '0' when ref_clock_from_ext = '1' else '0';--'0' when use ext127 clk
     CLK_SEL_254M    <= '0' when ref_clock_from_ext = '1' else '0';--'0' when use ext254 clk
     --connect ext para data
