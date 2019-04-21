@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-ILFHC7N::  Tue Mar 26 01:22:20 2019
+CURLYWEI-PC::  Mon Apr 22 00:48:27 2019
 
 par -w -intstyle ise -ol high -mt off XCVR_TOP_map.ncd XCVR_TOP.ncd
 XCVR_TOP.pcf 
@@ -22,16 +22,16 @@ Device speed data version:  "PRODUCTION 1.17 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,859 out of 478,080    1%
-    Number used as Flip Flops:               2,857
+  Number of Slice Registers:                 2,867 out of 478,080    1%
+    Number used as Flip Flops:               2,865
     Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,904 out of 239,040    1%
-    Number used as logic:                      869 out of 239,040    1%
-      Number using O6 output only:             539
+  Number of Slice LUTs:                      1,750 out of 239,040    1%
+    Number used as logic:                      875 out of 239,040    1%
+      Number using O6 output only:             544
       Number using O5 output only:             101
-      Number using O5 and O6:                  229
+      Number using O5 and O6:                  230
       Number used as ROM:                        0
     Number used as Memory:                     276 out of  73,120    1%
       Number used as Dual Port RAM:              0
@@ -40,17 +40,17 @@ Slice Logic Utilization:
         Number using O6 output only:           186
         Number using O5 output only:             2
         Number using O5 and O6:                 88
-    Number used exclusively as route-thrus:    759
-      Number with same-slice register load:    533
+    Number used exclusively as route-thrus:    599
+      Number with same-slice register load:    373
       Number with same-slice carry load:       163
       Number with other load:                   63
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   927 out of  59,760    1%
-  Number of LUT Flip Flop pairs used:        2,802
-    Number with an unused Flip Flop:           728 out of   2,802   25%
-    Number with an unused LUT:                 898 out of   2,802   32%
-    Number of fully used LUT-FF pairs:       1,176 out of   2,802   41%
+  Number of occupied Slices:                   990 out of  59,760    1%
+  Number of LUT Flip Flop pairs used:        2,992
+    Number with an unused Flip Flop:           733 out of   2,992   24%
+    Number with an unused LUT:               1,242 out of   2,992   41%
+    Number of fully used LUT-FF pairs:       1,017 out of   2,992   33%
     Number of slice register sites lost
       to control set restrictions:               0 out of 478,080    0%
 
@@ -114,25 +114,25 @@ Finished initial Timing Analysis.  REAL time: 14 secs
 Starting Router
 
 
-Phase  1  : 22279 unrouted;      REAL time: 18 secs 
+Phase  1  : 22440 unrouted;      REAL time: 18 secs 
 
-Phase  2  : 18685 unrouted;      REAL time: 20 secs 
+Phase  2  : 18778 unrouted;      REAL time: 20 secs 
 
-Phase  3  : 2034 unrouted;      REAL time: 30 secs 
+Phase  3  : 1871 unrouted;      REAL time: 30 secs 
 
-Phase  4  : 2034 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 39 secs 
+Phase  4  : 1871 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 39 secs 
 
 Updating file: XCVR_TOP.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
 Total REAL time to Router completion: 41 secs 
@@ -157,52 +157,52 @@ Generating Clock Report
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/tx_clk_buf_out<3 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y4| No   |   18 |  0.462     |  2.190      |
+|                   > | BUFGCTRL_X0Y4| No   |   21 |  0.568     |  2.190      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/tx_clk_buf_out<2 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y8| No   |   18 |  0.453     |  2.180      |
+|                   > | BUFGCTRL_X0Y8| No   |   19 |  0.525     |  2.180      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/tx_clk_buf_out<1 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y1| No   |   20 |  0.436     |  2.176      |
+|                   > | BUFGCTRL_X0Y1| No   |   19 |  0.473     |  2.176      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/tx_clk_buf_out<0 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y6| No   |  152 |  0.490     |  2.188      |
-+---------------------+--------------+------+------+------------+-------------+
-|Ref_Clock_buffer_out |              |      |      |            |             |
-|               _BUFG | BUFGCTRL_X0Y2| No   |   17 |  0.101     |  1.862      |
+|                   > | BUFGCTRL_X0Y6| No   |  166 |  0.589     |  2.188      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/rx_clk_buf_out<0 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y5| No   |  403 |  0.387     |  2.190      |
+|                   > | BUFGCTRL_X0Y5| No   |  431 |  0.465     |  2.190      |
++---------------------+--------------+------+------+------------+-------------+
+|Ref_Clock_buffer_out |              |      |      |            |             |
+|               _BUFG | BUFGCTRL_X0Y2| No   |   17 |  0.146     |  1.867      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/rx_clk_buf_out<3 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y3| No   |   38 |  0.372     |  2.188      |
+|                   > | BUFGCTRL_X0Y3| No   |   41 |  0.432     |  2.188      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/rx_clk_buf_out<2 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y7| No   |   38 |  0.364     |  2.174      |
+|                   > | BUFGCTRL_X0Y7| No   |   39 |  0.412     |  2.174      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/rx_clk_buf_out<1 |              |      |      |            |             |
-|                   > | BUFGCTRL_X0Y0| No   |   38 |  0.369     |  2.183      |
+|                   > | BUFGCTRL_X0Y0| No   |   40 |  0.367     |  2.183      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/chip_scope_ctrl_ |              |      |      |            |             |
-|                0<0> |BUFGCTRL_X0Y31| No   |  122 |  0.299     |  2.005      |
+|                0<0> |BUFGCTRL_X0Y31| No   |  126 |  0.380     |  1.979      |
 +---------------------+--------------+------+------+------------+-------------+
-|   CLK_SEL_254M_OBUF |         Local|      | 1166 |  5.226     |  7.428      |
+|   CLK_SEL_254M_OBUF |         Local|      | 1183 |  5.577     |  7.779      |
 +---------------------+--------------+------+------+------------+-------------+
 |Ref_Clock_buffer_out |              |      |      |            |             |
 |                     |         Local|      |    9 |  0.000     |  2.440      |
@@ -210,17 +210,17 @@ Generating Clock Report
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/icon/U0/iUPDATE_ |              |      |      |            |             |
-|                 OUT |         Local|      |    1 |  0.000     |  1.297      |
+|                 OUT |         Local|      |    1 |  0.000     |  1.030      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/chip_scope_ctrl_ |              |      |      |            |             |
-|               1<13> |         Local|      |    4 |  0.000     |  0.432      |
+|               1<13> |         Local|      |    4 |  0.000     |  0.674      |
 +---------------------+--------------+------+------+------------+-------------+
 |Connect_XVCR_Module_ |              |      |      |            |             |
 |loop[0].XCVR_Module_ |              |      |      |            |             |
 |gen/chip_scope_ctrl_ |              |      |      |            |             |
-|               0<13> |         Local|      |    4 |  0.000     |  0.296      |
+|               0<13> |         Local|      |    4 |  0.000     |  0.405      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -242,26 +242,26 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.442ns|     2.558ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.665ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.382ns|     2.618ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.574ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.369ns|     0.631ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.139ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.372ns|     0.628ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.136ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.788ns|     7.212ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.084ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.395ns|     7.605ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.099ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.917ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.410ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     2.834ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.022ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     2.145ns|     N/A|           0
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     2.201ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_path" TIG               | SETUP       |         N/A|     4.377ns|     N/A|           0
+  PATH "TS_J4_TO_D2_path" TIG               | MAXDELAY    |         N/A|     4.031ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 

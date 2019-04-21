@@ -1,4 +1,5 @@
-xst -intstyle ise -ifn "C:/Users/dzwei-home/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.xst" -ofn "C:/Users/dzwei-home/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/curlywei/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.xst" -ofn "C:/Users/curlywei/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/curlywei/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.xst" -ofn "C:/Users/curlywei/Desktop/ut3extGP/BelleIIvt6127gp/XCVR_TOP.syr" 
 ngdbuild -intstyle ise -dd _ngo -sd ../ipcore_dir -sd ../ipcore_dir/v6_gtxwizard_v1_12/implement -nt timestamp -uc XCVR_TOP.ucf -p xc6vhx380t-ff1923-2 XCVR_TOP.ngc XCVR_TOP.ngd  
 map -intstyle ise -p xc6vhx380t-ff1923-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o XCVR_TOP_map.ncd XCVR_TOP.ngd XCVR_TOP.pcf 
 par -w -intstyle ise -ol high -mt off XCVR_TOP_map.ncd XCVR_TOP.ncd XCVR_TOP.pcf 

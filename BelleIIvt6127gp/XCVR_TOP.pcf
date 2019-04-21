@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Mar 26 01:22:16 2019
+// Written by: Map P.20131013 on Mon Apr 22 00:48:24 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -258,6 +258,8 @@ TIMEGRP D_CLK = PIN
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/Rx_DATA_client_r_0"
         BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start"
+        BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/rx_traffic_ready"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/TX_K_0"
@@ -416,9 +418,9 @@ TIMEGRP D_CLK = PIN
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_2_3"
         BEL
-        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_0"
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_1"
         BEL
-        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_1"
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_0"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_1_0"
         BEL
@@ -2353,6 +2355,8 @@ TIMEGRP D_CLK = PIN
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_0_0"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/sync_status"
+        BEL
+        "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start_r"
         BEL
         "Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/rx_traffic_ready_r"
         BEL

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: XCVR_TOP.prj
 
@@ -108,58 +108,59 @@ Cores Search Directories           : {"../ipcore_dir" "../ipcore_dir/v6_gtxwizar
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\chipscope_icon.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\chipscope_icon.vhd" into library work
 Parsing entity <chipscope_icon>.
 Parsing architecture <chipscope_icon_a> of entity <chipscope_icon>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\chipscope_ila.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\chipscope_ila.vhd" into library work
 Parsing entity <chipscope_ila>.
 Parsing architecture <chipscope_ila_a> of entity <chipscope_ila>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" into library work
 Parsing entity <v6_gtxwizard_v1_12_gtx>.
 Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12_gtx>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_gen.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_gen.vhd" into library work
 Parsing entity <FRAME_GEN>.
 Parsing architecture <RTL> of entity <frame_gen>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_check.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\frame_check.vhd" into library work
 Parsing entity <FRAME_CHECK>.
 Parsing architecture <RTL> of entity <frame_check>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" into library work
 Parsing entity <v6_gtxwizard_v1_12>.
 Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\v6_gtxwizard_v1_12_top.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12\example_design\v6_gtxwizard_v1_12_top.vhd" into library work
 Parsing entity <v6_gtxwizard_v1_12_top>.
 Parsing architecture <RTL> of entity <v6_gtxwizard_v1_12_top>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\DataStruct_param_def_header.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\DataStruct_param_def_header.vhd" into library work
 Parsing package <DataStruct_param_def_header>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\D_FF_sync_buf.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\D_FF_sync_buf.vhd" into library work
 Parsing entity <D_FF_sync_buf>.
 Parsing architecture <Behavioral> of entity <d_ff_sync_buf>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buf_out_mux.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buf_out_mux.vhd" into library work
 Parsing entity <ch_sync_buf_out_mux>.
 Parsing architecture <Behavioral> of entity <ch_sync_buf_out_mux>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\traffic.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\traffic.vhd" into library work
 Parsing entity <traffic>.
 Parsing architecture <top> of entity <traffic>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\reset_ctrl.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\reset_ctrl.vhd" into library work
 Parsing entity <reset_ctrl>.
 Parsing architecture <Behavioral> of entity <reset_ctrl>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_gen.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\frame_gen.vhd" into library work
 Parsing entity <frame_gen>.
-WARNING:HDLCompiler:685 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_gen.vhd" Line 9: Overwriting existing primary unit frame_gen
+WARNING:HDLCompiler:685 - "C:\Users\curlywei\Desktop\ut3extGP\src\frame_gen.vhd" Line 9: Overwriting existing primary unit frame_gen
 Parsing architecture <RTL> of entity <frame_gen>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_check.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\frame_check.vhd" into library work
 Parsing entity <frame_check>.
-WARNING:HDLCompiler:685 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_check.vhd" Line 9: Overwriting existing primary unit frame_check
+WARNING:HDLCompiler:685 - "C:\Users\curlywei\Desktop\ut3extGP\src\frame_check.vhd" Line 9: Overwriting existing primary unit frame_check
 Parsing architecture <RTL> of entity <frame_check>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" into library work
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" into library work
 Parsing entity <ch_sync_buffer_4ch>.
 Parsing architecture <top> of entity <ch_sync_buffer_4ch>.
-WARNING:HDLCompiler:946 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 64: Actual for formal port rst_n is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 115: Actual for formal port sel is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" into library work
+WARNING:HDLCompiler:946 - "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 64: Actual for formal port rst_n is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 116: Actual for formal port sel is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" into library work
 Parsing entity <XCVR_8B10B_interconnect>.
 Parsing architecture <XCVR_8B10B_interconnect_Top> of entity <xcvr_8b10b_interconnect>.
-Parsing VHDL file "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_top.vhd" into library work
+WARNING:HDLCompiler:946 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" Line 711: Actual for formal port sync_en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_top.vhd" into library work
 Parsing entity <XCVR_TOP>.
 Parsing architecture <XCVR_TOP_connect> of entity <xcvr_top>.
 
@@ -170,35 +171,35 @@ Parsing architecture <XCVR_TOP_connect> of entity <xcvr_top>.
 Elaborating entity <XCVR_TOP> (architecture <XCVR_TOP_connect>) from library <work>.
 
 Elaborating entity <XCVR_8B10B_interconnect> (architecture <XCVR_8B10B_interconnect_Top>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" Line 83: Using initial value ("00","00","00","00") for rx_err_detec_ch since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" Line 83: Using initial value ("00","00","00","00") for rx_err_detec_ch since it is never assigned
 
 Elaborating entity <v6_gtxwizard_v1_12> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" Line 414: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" Line 414: Assignment to tied_to_vcc_i ignored, since the identifier is never used
 
 Elaborating entity <v6_gtxwizard_v1_12_gtx> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 432: Assignment to rxchariscomma_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 434: Assignment to rxcharisk_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 437: Assignment to rxdisperr_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 439: Assignment to rxnotintable_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 441: Assignment to rxrundisp_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 432: Assignment to rxchariscomma_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 434: Assignment to rxcharisk_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 437: Assignment to rxdisperr_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 439: Assignment to rxnotintable_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd" Line 441: Assignment to rxrundisp_float_i ignored, since the identifier is never used
 
 Elaborating entity <frame_gen> (architecture <RTL>) from library <work>.
 
 Elaborating entity <frame_check> (architecture <RTL>) from library <work>.
 
 Elaborating entity <traffic> (architecture <top>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\traffic.vhd" Line 203. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\traffic.vhd" Line 311. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\ut3extGP\src\traffic.vhd" Line 203. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\ut3extGP\src\traffic.vhd" Line 311. Case statement is complete. others clause is never selected
 
 Elaborating entity <ch_sync_buffer_4ch> (architecture <top>) with generics from library <work>.
 
 Elaborating entity <D_FF_sync_buf> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd" Line 106. Case statement is complete. others clause is never selected
 
 Elaborating entity <ch_sync_buf_out_mux> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <reset_ctrl> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\reset_ctrl.vhd" Line 163. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\curlywei\Desktop\ut3extGP\src\reset_ctrl.vhd" Line 163. Case statement is complete. others clause is never selected
 
 Elaborating entity <chipscope_icon> (architecture <chipscope_icon_a>) from library <work>.
 
@@ -209,37 +210,33 @@ Elaborating entity <chipscope_ila> (architecture <chipscope_ila_a>) from library
 =========================================================================
 
 Synthesizing Unit <XCVR_TOP>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_top.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_top.vhd".
     Summary:
 	no macro.
 Unit <XCVR_TOP> synthesized.
 
 Synthesizing Unit <XCVR_8B10B_interconnect>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd".
 WARNING:Xst:647 - Input <TX_para_external_ch<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <TX_para_external_ch<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <TX_para_external_ch<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <TX_para_external_ch<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX0_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX0_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX0_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX0_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX1_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX1_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX1_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX1_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX2_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX2_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX2_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX2_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX3_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX3_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX3_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 425: Output port <GTX3_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 677: Output port <gp_sync_can_start> of the instance <generate_traffic_loop[0].traffic> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 677: Output port <gp_sync_can_start> of the instance <generate_traffic_loop[1].traffic> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 677: Output port <gp_sync_can_start> of the instance <generate_traffic_loop[2].traffic> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 677: Output port <gp_sync_can_start> of the instance <generate_traffic_loop[3].traffic> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX0_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX0_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX0_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX0_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX1_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX1_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX1_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX1_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX2_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX2_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX2_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX2_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX3_RXCHARISCOMMA_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX3_RXNOTINTABLE_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX3_RXRUNDISP_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\src\XCVR_8B10B_interconnect.vhd" line 426: Output port <GTX3_RXLOSSOFSYNC_OUT> of the instance <v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <RX_para_external_ch<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <RX_para_external_ch<2>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <RX_para_external_ch<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -253,18 +250,18 @@ WARNING:Xst:653 - Signal <rx_traffic_ready_ext_ch> is used but never assigned. T
 Unit <XCVR_8B10B_interconnect> synthesized.
 
 Synthesizing Unit <v6_gtxwizard_v1_12>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd".
         WRAPPER_SIM_GTXRESET_SPEEDUP = 1
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 431: Output port <TXPLLLKDET_OUT> of the instance <gtx0_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 505: Output port <TXPLLLKDET_OUT> of the instance <gtx1_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 579: Output port <TXPLLLKDET_OUT> of the instance <gtx2_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 653: Output port <TXPLLLKDET_OUT> of the instance <gtx3_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 431: Output port <TXPLLLKDET_OUT> of the instance <gtx0_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 505: Output port <TXPLLLKDET_OUT> of the instance <gtx1_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 579: Output port <TXPLLLKDET_OUT> of the instance <gtx2_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12.vhd" line 653: Output port <TXPLLLKDET_OUT> of the instance <gtx3_v6_gtxwizard_v1_12_i> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <v6_gtxwizard_v1_12> synthesized.
 
 Synthesizing Unit <v6_gtxwizard_v1_12_gtx>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\ipcore_dir\v6_gtxwizard_v1_12_gtx.vhd".
         GTX_SIM_GTXRESET_SPEEDUP = 1
         GTX_TX_CLK_SOURCE = "RXPLL"
         GTX_POWER_SAVE = "0000110100"
@@ -273,7 +270,7 @@ Synthesizing Unit <v6_gtxwizard_v1_12_gtx>.
 Unit <v6_gtxwizard_v1_12_gtx> synthesized.
 
 Synthesizing Unit <frame_gen>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_gen.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\frame_gen.vhd".
     Found 16-bit register for signal <tx_d_r>.
     Found 16-bit adder for signal <tx_d_r[15]_GND_261_o_add_0_OUT> created at line 31.
     Summary:
@@ -283,7 +280,7 @@ Synthesizing Unit <frame_gen>.
 Unit <frame_gen> synthesized.
 
 Synthesizing Unit <frame_check>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\frame_check.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\frame_check.vhd".
 WARNING:Xst:647 - Input <RX_D> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit register for signal <err_count_r>.
     Found 16-bit adder for signal <err_count_r[15]_GND_262_o_add_2_OUT> created at line 38.
@@ -293,7 +290,7 @@ WARNING:Xst:647 - Input <RX_D> is never used. This port will be preserved and le
 Unit <frame_check> synthesized.
 
 Synthesizing Unit <traffic>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\traffic.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\traffic.vhd".
         sent_k_until_clks = 65535
         flag_of_k_ctrl = "01"
         flag_of_k_data = "00"
@@ -363,7 +360,7 @@ Synthesizing Unit <traffic>.
 Unit <traffic> synthesized.
 
 Synthesizing Unit <ch_sync_buffer_4ch>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buffer_4ch.vhd".
         grouped_ch = 4
         sync_pattern = "0001001000110100"
     Found 4-bit register for signal <cnt_ch<2>>.
@@ -402,25 +399,25 @@ Synthesizing Unit <ch_sync_buffer_4ch>.
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred  35 D-type flip-flop(s).
-	inferred  10 Multiplexer(s).
+	inferred  11 Multiplexer(s).
 Unit <ch_sync_buffer_4ch> synthesized.
 
 Synthesizing Unit <D_FF_sync_buf>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\D_FF_sync_buf.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\D_FF_sync_buf.vhd".
     Found 16-bit register for signal <Q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <D_FF_sync_buf> synthesized.
 
 Synthesizing Unit <ch_sync_buf_out_mux>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buf_out_mux.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\ch_sync_buf_4ch\ch_sync_buf_out_mux.vhd".
     Found 16-bit 16-to-1 multiplexer for signal <Data_Out> created at line 18.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <ch_sync_buf_out_mux> synthesized.
 
 Synthesizing Unit <reset_ctrl>.
-    Related source file is "C:\Users\dzwei-home\Desktop\ut3extGP\src\reset_ctrl.vhd".
+    Related source file is "C:\Users\curlywei\Desktop\ut3extGP\src\reset_ctrl.vhd".
         power_on_wait_clks = 65535
         wait_locked_clks = 65535
         wait_alignment_done_clks = 255
@@ -433,9 +430,9 @@ WARNING:Xst:647 - Input <rx_pattern_detected<3>> is never used. This port will b
 WARNING:Xst:647 - Input <rx_pattern_detected<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rx_pattern_detected<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rx_pattern_detected<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <XCVR_rst_out>.
     Found 1-bit register for signal <align_en>.
     Found 1-bit register for signal <lane_up>.
-    Found 4-bit register for signal <XCVR_rst_out>.
     Found 16-bit register for signal <lane_up_FSM.power_on_cnt>.
     Found 16-bit register for signal <lane_up_FSM.locked_cnt>.
     Found 3-bit register for signal <lane_up_status>.
@@ -443,7 +440,7 @@ WARNING:Xst:647 - Input <rx_pattern_detected<0>> is never used. This port will b
     Found 1-bit register for signal <RX_freq_locked_r>.
     Found 1-bit register for signal <rst_ip_done>.
     Found 1-bit register for signal <all_locked>.
-    Found 4-bit register for signal <XCVR_rst_out_r>.
+    Found 1-bit register for signal <XCVR_rst_out_r>.
     Found 1-bit register for signal <align_en_r>.
     Found 1-bit register for signal <lane_up_r>.
     Found 8-bit register for signal <lane_up_FSM.pre_lane_up_cnt>.
@@ -462,12 +459,12 @@ WARNING:Xst:647 - Input <rx_pattern_detected<0>> is never used. This port will b
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 16-bit adder for signal <lane_up_FSM.power_on_cnt[15]_GND_277_o_add_14_OUT> created at line 110.
-    Found 16-bit adder for signal <lane_up_FSM.locked_cnt[15]_GND_277_o_add_19_OUT> created at line 124.
-    Found 8-bit adder for signal <lane_up_FSM.comma_align_cnt[7]_GND_277_o_add_25_OUT> created at line 138.
-    Found 8-bit adder for signal <lane_up_FSM.pre_lane_up_cnt[7]_GND_277_o_add_29_OUT> created at line 148.
+    Found 16-bit adder for signal <lane_up_FSM.locked_cnt[15]_GND_277_o_add_18_OUT> created at line 124.
+    Found 8-bit adder for signal <lane_up_FSM.comma_align_cnt[7]_GND_277_o_add_24_OUT> created at line 138.
+    Found 8-bit adder for signal <lane_up_FSM.pre_lane_up_cnt[7]_GND_277_o_add_28_OUT> created at line 148.
     Summary:
 	inferred   4 Adder/Subtractor(s).
-	inferred  63 D-type flip-flop(s).
+	inferred  57 D-type flip-flop(s).
 	inferred   7 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <reset_ctrl> synthesized.
@@ -482,17 +479,17 @@ Macro Statistics
  4-bit subtractor                                      : 4
  8-bit adder                                           : 2
 # Registers                                            : 184
- 1-bit register                                        : 66
+ 1-bit register                                        : 68
  16-bit register                                       : 98
  2-bit register                                        : 12
- 4-bit register                                        : 6
+ 4-bit register                                        : 4
  8-bit register                                        : 2
-# Multiplexers                                         : 57
- 1-bit 2-to-1 multiplexer                              : 7
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 9
  16-bit 16-to-1 multiplexer                            : 4
  16-bit 2-to-1 multiplexer                             : 35
  2-bit 2-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 4
  8-bit 2-to-1 multiplexer                              : 2
 # FSMs                                                 : 9
 
@@ -559,14 +556,13 @@ Macro Statistics
  16-bit up counter                                     : 9
  4-bit up counter                                      : 4
  8-bit up counter                                      : 2
-# Registers                                            : 1522
- Flip-Flops                                            : 1522
-# Multiplexers                                         : 62
- 1-bit 2-to-1 multiplexer                              : 23
+# Registers                                            : 1516
+ Flip-Flops                                            : 1516
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 25
  16-bit 16-to-1 multiplexer                            : 4
  16-bit 2-to-1 multiplexer                             : 30
  2-bit 2-to-1 multiplexer                              : 4
- 4-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 9
 
 =========================================================================
@@ -619,8 +615,6 @@ Optimizing FSM <Connect_XVCR_Module_loop[0].XCVR_Module_gen/rst_ctrl/FSM_2> on s
  pre_lane_up        | 011
  now_xcvr_init_done | 100
 --------------------------------
-INFO:Xst:2261 - The FF/Latch <XCVR_rst_out_r_0> in Unit <reset_ctrl> is equivalent to the following 3 FFs/Latches, which will be removed : <XCVR_rst_out_r_1> <XCVR_rst_out_r_2> <XCVR_rst_out_r_3> 
-INFO:Xst:2261 - The FF/Latch <XCVR_rst_out_0> in Unit <reset_ctrl> is equivalent to the following 3 FFs/Latches, which will be removed : <XCVR_rst_out_1> <XCVR_rst_out_2> <XCVR_rst_out_3> 
 
 Optimizing unit <XCVR_TOP> ...
 
@@ -635,14 +629,6 @@ Optimizing unit <ch_sync_buffer_4ch> ...
 Optimizing unit <D_FF_sync_buf> ...
 
 Optimizing unit <reset_ctrl> ...
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[3].traffic/gp_sync_can_start> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[3].traffic/gp_sync_can_start_r> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[2].traffic/gp_sync_can_start> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[2].traffic/gp_sync_can_start_r> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[1].traffic/gp_sync_can_start> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[1].traffic/gp_sync_can_start_r> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start> of sequential type is unconnected in block <XCVR_TOP>.
-WARNING:Xst:2677 - Node <Connect_XVCR_Module_loop[0].XCVR_Module_gen/generate_traffic_loop[0].traffic/gp_sync_can_start_r> of sequential type is unconnected in block <XCVR_TOP>.
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_3_3> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_3_2> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_3_1> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
@@ -655,13 +641,13 @@ WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_0_3> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_0_2> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/cnt_ch_0_1> has a constant value of 0 in block <XCVR_TOP>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_1> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_0> 
+INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_0> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_1> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_3> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_0_2> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_1_0> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_1_1> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_1_3> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_1_2> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_2_0> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_2_1> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_2_3> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_2_2> 
-INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_0> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_1> 
+INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_1> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_0> 
 INFO:Xst:2261 - The FF/Latch <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_3> in Unit <XCVR_TOP> is equivalent to the following FF/Latch, which will be removed : <Connect_XVCR_Module_loop[0].XCVR_Module_gen/ch_sync_buf_4ch/out_mux_sel_ch_3_2> 
 
 Mapping all equations...
@@ -744,8 +730,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1747
- Flip-Flops                                            : 1747
+# Registers                                            : 1755
+ Flip-Flops                                            : 1755
 
 =========================================================================
 
@@ -768,15 +754,15 @@ Top Level Output File Name         : XCVR_TOP.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2599
+# BELS                             : 2606
 #      GND                         : 40
 #      INV                         : 22
 #      LUT1                        : 328
-#      LUT2                        : 139
+#      LUT2                        : 138
 #      LUT3                        : 438
-#      LUT4                        : 281
-#      LUT5                        : 35
-#      LUT6                        : 234
+#      LUT4                        : 282
+#      LUT5                        : 37
+#      LUT6                        : 239
 #      MUXCY                       : 224
 #      MUXCY_L                     : 239
 #      MUXF5                       : 2
@@ -785,12 +771,12 @@ Primitive and Black Box Usage:
 #      MUXF8                       : 68
 #      VCC                         : 46
 #      XORCY                       : 354
-# FlipFlops/Latches                : 2923
-#      FD                          : 398
-#      FDC                         : 1221
+# FlipFlops/Latches                : 2931
+#      FD                          : 402
+#      FDC                         : 1224
 #      FDCE                        : 254
 #      FDE                         : 356
-#      FDP                         : 402
+#      FDP                         : 403
 #      FDR                         : 93
 #      FDRE                        : 157
 #      FDS                         : 40
@@ -821,18 +807,18 @@ Selected Device : 6vhx380tff1923-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2859  out of  478080     0%  
- Number of Slice LUTs:                 1841  out of  239040     0%  
-    Number used as Logic:              1477  out of  239040     0%  
+ Number of Slice Registers:            2867  out of  478080     0%  
+ Number of Slice LUTs:                 1848  out of  239040     0%  
+    Number used as Logic:              1484  out of  239040     0%  
     Number used as Memory:              364  out of  73120     0%  
        Number used as SRL:              364
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3584
-   Number with an unused Flip Flop:     725  out of   3584    20%  
-   Number with an unused LUT:          1743  out of   3584    48%  
-   Number of fully used LUT-FF pairs:  1116  out of   3584    31%  
-   Number of unique control sets:       162
+ Number of LUT Flip Flop pairs used:   3592
+   Number with an unused Flip Flop:     725  out of   3592    20%  
+   Number with an unused LUT:          1744  out of   3592    48%  
+   Number of fully used LUT-FF pairs:  1123  out of   3592    31%  
+   Number of unique control sets:       163
 
 IO Utilization: 
  Number of IOs:                         224
@@ -869,10 +855,10 @@ Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>               
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>                                                                                             | BUFG                                                                                          | 88    |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>                                                                                             | BUFG                                                                                          | 88    |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>                                                                                             | BUFG                                                                                          | 88    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>                                                                                             | BUFG                                                                                          | 90    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>                                                                                             | BUFG                                                                                          | 90    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>                                                                                             | BUFG                                                                                          | 90    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>                                                                                             | BUFG                                                                                          | 1672  |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>                                                                                             | BUFG                                                                                          | 92    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>                                                                                             | BUFG                                                                                          | 92    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>                                                                                             | BUFG                                                                                          | 92    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>                                                                                             | BUFG                                                                                          | 1674  |
 XCVR_Ref_Clock_in                                                                                                                                             | IBUF+IBUFDS_GTXE1+BUFG                                                                        | 60    |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                                                       | BUFG                                                                                          | 335   |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/CONTROL1<13>(Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE:O)| NONE(*)(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
@@ -901,8 +887,8 @@ Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_C
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 72    |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/N0(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/XST_GND:G) | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 72    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 12    |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 12    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_rx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 12    |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(Connect_XVCR_Module_loop[0].XCVR_Module_gen/ila_tx/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 12    |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -910,7 +896,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 5.213ns (Maximum Frequency: 191.832MHz)
-   Minimum input arrival time before clock: 2.035ns
+   Minimum input arrival time before clock: 2.036ns
    Maximum output required time after clock: 0.659ns
    Maximum combinational path delay: No path found
 
@@ -1148,12 +1134,12 @@ Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/
 Source Clock                                                                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------------------------+---------+---------+---------+---------+
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>                      |    3.481|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>                      |    3.662|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>                      |    3.229|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>                      |    3.359|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>                      |    4.072|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>                      |    4.141|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>                      |    4.227|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>                      |    2.075|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    2.829|         |         |         |
-XCVR_Ref_Clock_in                                                                      |    2.259|         |         |         |
+XCVR_Ref_Clock_in                                                                      |    2.263|         |         |         |
 ---------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>
@@ -1166,7 +1152,7 @@ Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>|    3.481|    
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>|    2.199|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>|    2.253|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>|    2.075|         |         |         |
-XCVR_Ref_Clock_in                                                |    2.259|         |         |         |
+XCVR_Ref_Clock_in                                                |    2.263|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>
@@ -1179,7 +1165,7 @@ Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>|    2.113|    
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>|    3.481|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>|    2.253|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>|    2.075|         |         |         |
-XCVR_Ref_Clock_in                                                |    2.259|         |         |         |
+XCVR_Ref_Clock_in                                                |    2.263|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>
@@ -1192,7 +1178,7 @@ Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>|    2.113|    
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>|    2.199|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>|    3.481|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>|    2.075|         |         |         |
-XCVR_Ref_Clock_in                                                |    2.259|         |         |         |
+XCVR_Ref_Clock_in                                                |    2.263|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>
@@ -1200,13 +1186,13 @@ Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/
                                                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------------------------------------------+---------+---------+---------+---------+
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>                      |    1.765|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>                      |    1.771|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>                      |    2.988|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>                      |    1.575|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>                      |    1.644|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>                      |    1.730|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    2.829|         |         |         |
-XCVR_Ref_Clock_in                                                                      |    1.806|         |         |         |
+XCVR_Ref_Clock_in                                                                      |    1.736|         |         |         |
 ---------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>
@@ -1215,12 +1201,12 @@ Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/
 Source Clock                                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------------------------------+---------+---------+---------+---------+
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>|    1.602|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>|    1.765|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<1>|    1.771|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>|    1.912|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>|    2.988|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>|    1.644|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>|    1.730|         |         |         |
-XCVR_Ref_Clock_in                                                |    1.806|         |         |         |
+XCVR_Ref_Clock_in                                                |    1.736|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>
@@ -1229,12 +1215,12 @@ Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/
 Source Clock                                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------------------------------+---------+---------+---------+---------+
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>|    1.602|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>|    1.765|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<2>|    1.771|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>|    1.912|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>|    1.575|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>|    2.988|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>|    1.730|         |         |         |
-XCVR_Ref_Clock_in                                                |    1.806|         |         |         |
+XCVR_Ref_Clock_in                                                |    1.736|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>
@@ -1243,12 +1229,12 @@ Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/
 Source Clock                                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------------------------------+---------+---------+---------+---------+
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<0>|    1.602|         |         |         |
-Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>|    1.765|         |         |         |
+Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Rx_clk_out_ch<3>|    1.771|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<0>|    1.912|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<1>|    1.575|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<2>|    1.644|         |         |         |
 Connect_XVCR_Module_loop[0].XCVR_Module_gen/XCVR_Tx_clk_out_ch<3>|    2.988|         |         |         |
-XCVR_Ref_Clock_in                                                |    1.806|         |         |         |
+XCVR_Ref_Clock_in                                                |    1.736|         |         |         |
 -----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Connect_XVCR_Module_loop[0].XCVR_Module_gen/icon/CONTROL0<13>
@@ -1299,14 +1285,14 @@ XCVR_Ref_Clock_in|    3.187|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.75 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.54 secs
  
 --> 
 
-Total memory usage is 4594724 kilobytes
+Total memory usage is 4594796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   73 (   0 filtered)
-Number of infos    :   38 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
 
