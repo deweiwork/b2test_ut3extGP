@@ -136,9 +136,9 @@ architecture XCVR_8B10B_interconnect_Top of XCVR_8B10B_interconnect is
     --grouping
     signal rx_Para_data_to_sync_buf_ch          : para_data_men;
     signal rx_Para_data_from_sync_buf_ch        : para_data_men;
-    signal elastic_buf_overflow                 : std_logic;
-    signal elastic_buf_sync_done                : std_logic;
-    signal elastic_can_start_sync               : ser_data_men;
+    signal elastic_buf_overflow                 : std_logic := '0';
+    signal elastic_buf_sync_done                : std_logic := '0';
+    signal elastic_can_start_sync               : ser_data_men := "0000";
 component v6_gtxwizard_v1_12 
 generic
 (
